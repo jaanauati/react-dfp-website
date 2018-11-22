@@ -1,0 +1,25 @@
+{
+  "name": "reac-dfp-site",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "export": "next export",
+    "start": "next start",
+    "serve": "serve ./out",
+    "deploy":"npm run build && npm run export && npx surge --domain reactdfp.surge.sh out"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "next": "^7.0.2",
+    "react": "^16.6.3",
+    "react-dom": "^16.6.3",
+    "serve": "^10.1.1"
+  },
+  "devDependencies": {
+    "surge": "^0.20.1"
+  }
+}
