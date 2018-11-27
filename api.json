@@ -1,0 +1,23 @@
+{
+    "ADSLOT_API": {
+        "dfpNetworkId": {},
+        "adUnit": {},
+        "sizes": {},
+        "sizeMapping": {},
+        "adSenseAttributes": {},
+        "targetingArguments": {},
+        "onSlotRender": {},
+        "onSlotIsViewable": {},
+        "shouldRefresh": {},
+        "slotId": {}
+    },
+    "DFP_SLOTS_PROVIDER": {
+        "autoLoad": {},
+        "dfpNetworkId": {},
+        "adUnit": {},
+        "sizeMapping": {},
+        "adSenseAttributes": {},
+        "targetingArguments": {},
+        "collapseEmptyDivs": {}
+    }
+}

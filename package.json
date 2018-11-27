@@ -1,25 +1,29 @@
 {
-  "name": "reac-dfp-site",
+  "name": "reac-dfp-website",
   "version": "1.0.0",
-  "description": "",
+  "description": "react-dfp website",
   "main": "index.js",
   "scripts": {
     "dev": "next",
     "build": "next build",
-    "export": "next export",
+    "export": "next build && next export -o dist",
     "start": "next start",
-    "serve": "serve ./out",
-    "deploy":"npm run build && npm run export && npx surge --domain reactdfp.surge.sh out"
+    "serve": "npm run export && serve ./dist",
+    "deploy": "npm run export && npx surge --domain `cat SURGE_SUBDOMAIN` dist"
   },
-  "author": "",
+  "author": "Jonatan Anauati (barakawins@gmail.com)",
   "license": "ISC",
   "dependencies": {
     "next": "^7.0.2",
     "react": "^16.6.3",
+    "react-dfp": "^0.7.6",
     "react-dom": "^16.6.3",
+    "react-github-corner": "^2.3.0",
+    "react-syntax-highlighter": "^10.1.1",
     "serve": "^10.1.1"
   },
   "devDependencies": {
+    "raw-loader": "^0.5.1",
     "surge": "^0.20.1"
   }
 }
