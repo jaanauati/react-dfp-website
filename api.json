@@ -19,5 +19,16 @@
         "adSenseAttributes": {},
         "targetingArguments": {},
         "collapseEmptyDivs": {}
+    },
+    "DFP_MANAGER": {
+        "load": {},
+        "refresh": {},
+        "setAdSenseAttributes": {},
+        "setAdSenseAttribute": {},
+        "getAdSenseAttributes": {},
+        "getAdSenseAttribute": {},
+        "setTargetingArguments": {},
+        "getGoogletag": {},
+        "setCollapseEmptyDivs" : {}
     }
 }

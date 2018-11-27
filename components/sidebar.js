@@ -1,6 +1,6 @@
 import Link from 'next/link';
 
-const { ADSLOT_API, DFP_SLOTS_PROVIDER } = require('../api.json');
+const { ADSLOT_API, DFP_SLOTS_PROVIDER, DFP_MANAGER } = require('../api.json');
 
 function getListItems(listEntries, section) {
     return Object
@@ -25,7 +25,7 @@ export default function sideBar(props) {
             <h3> DFPSlotsProvider </h3>
             <ol>{ getListItems(DFP_SLOTS_PROVIDER, 'DFPSlotsProvider') } </ol>
             <h3> DFPManager </h3>
-            <ol>{ getListItems(ADSLOT_API, 'DFPManager') } </ol>
+            <ol>{ getListItems(DFP_MANAGER, 'DFPManager') } </ol>
         </div>
     );
 }
