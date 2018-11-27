@@ -37,7 +37,7 @@ export default class extends Component {
                                     justify-content: center;
                                 }
                 `}</style>
-                <GithubCorner href="https://github.com/username/repo" bannerColor="#70B7FD" />
+                <GithubCorner href="https://github.com/jaanauati/react-dfp" bannerColor="#70B7FD" />
                 <Head>
                     <title>React-dfp documentation: {this.props.title}</title>
                 </Head>
