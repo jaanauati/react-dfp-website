@@ -7,16 +7,16 @@ export default class Example extends Component {
         return (
             <DFPSlotsProvider
                 dfpNetworkId='9999'
-                adSenseAttributes={{ "foo": "bar", "test": "baz" }}
+                targetingArguments={ {'customKw': 'basic example'} }
             >
                 <div className="desktop-ads">
-                    <AdSlot adUnit='homepage/1' sizes={[ [728,90], [300, 250] ]} />
+                    <AdSlot sizes={[[728,90], [300, 250]]} adUnit='homepage/1' />
                 </div>
                 <div className="mobile-ads">
                     <AdSlot
-                        adUnit='homepage/2'
-                        sizes={[ [728,90], [300, 250] ]}
-                        adSenseAttributes={{ "site_url": "react-dfp.tk" }}
+                        sizes={[[320,50], [300, 50]]}
+                        adUnit='homepage/mobile'
+                        targetingArguments={ {'customKw': 'basic example'} }
                     />
                 </div>
             </DFPSlotsProvider>

@@ -12,9 +12,9 @@
         "slotId": {}
     },
     "DFP_SLOTS_PROVIDER": {
-        "autoLoad": {},
         "dfpNetworkId": {},
         "adUnit": {},
+        "autoLoad": {},
         "sizeMapping": {},
         "adSenseAttributes": {},
         "targetingArguments": {},

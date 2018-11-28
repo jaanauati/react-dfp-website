@@ -2,8 +2,8 @@ import React from 'react';
 
 export default () => (
     <ol>
-        <li> Lines 8: configure a global dfpNetworkId via &lt;DFPSlotProvider&gt;.</li>
-        <li> Line 10: we define an ad-slot using the &lt;AdSlot&gt; component. We configure this slot to support the following sizes: 728x90 and 300x250.</li>
-        <li> Line 13: we define another ad slot, in this case the slot supports the following sizes: 300x250, 300x600 and 'fluid'.</li>
+        <li> Lines 8: setup global config via &lt;DFPSlotProvider&gt;; we define the global adSense attributes foo=bar and test=baz.</li>
+        <li> Line 10: we define an ad-slot using the &lt;AdSlot&gt; component. This box picks the global adSense config passed via &lt;DFPSlotProvider&gt; </li>
+        <li> Line 13: a second ad slot with custom the adSense attribute site_url=react-dfp.tk.</li>
     </ol>
 );

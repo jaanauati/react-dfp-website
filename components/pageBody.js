@@ -1,4 +1,4 @@
-import { Component } from 'react'
+import { Component, Fragment } from 'react'
 import Head from 'next/head'
 import SyntaxHighlighter from 'react-syntax-highlighter';
 import { docco } from 'react-syntax-highlighter/styles/hljs';
@@ -11,14 +11,16 @@ export default class extends Component {
         try {
             module = require(`./ads/${this.props.example}`);
         } catch(ex) {
-            module = require(`./ads/basic`);
+            module = {};
         }
         let { Example, Hints, code } = module; 
         return (
             <main>
+                <link href="https://fonts.googleapis.com/css?family=Karla" rel="stylesheet" />
                 <style global jsx>{`
                     body {
                         background: blank;
+                        font-family: 'Karla', sans-serif;
                     }
                     .page-body {
                         display: flex;
@@ -30,12 +32,14 @@ export default class extends Component {
                         }
                             .page-body__example__ad {
                                 background: #f7ecf1;
-                                content: 'ADS GOES HERE...';
                             }
                                 .page-body__example__ad__content {
                                     display: flex;
                                     justify-content: center;
                                 }
+                            .page-body__example > ol {
+                                list-style-type: square;
+                            }
                 `}</style>
                 <GithubCorner href="https://github.com/jaanauati/react-dfp" bannerColor="#70B7FD" />
                 <Head>
@@ -47,15 +51,22 @@ export default class extends Component {
                 <div className="page-body">
                     <SideBar />
                     <div className="page-body__example">
-                        <div className="page-body__example__ad">
-                            <span className="page-body__example__ad__content"> ADS GO HERE... </span>
-                            <Example/>
-                        </div>
-                        <SyntaxHighlighter language='javascript' style={docco} showLineNumbers>
-                            {code}
-                        </SyntaxHighlighter>
-                        <h3> Outstanding points: </h3>
-                        <Hints/>
+                        { Example ?
+                            <Fragment>
+                                <div className="page-body__example__ad">
+                                    <span className="page-body__example__ad__content"> ADS GO HERE... </span>
+                                    <Example/>
+                                </div>
+                                <SyntaxHighlighter language='javascript' style={docco} showLineNumbers>
+                                    {code}
+                                </SyntaxHighlighter>
+                                <h3> Outstanding points: </h3>
+                                <Hints/>
+                            </Fragment>
+                            : <Fragment>
+                                <span> Work in progress... </span>
+                            </Fragment>
+                        }
                     </div>
                 </div>
             </main>
