@@ -13,9 +13,10 @@ export default class extends Component {
         } catch(ex) {
             module = {};
         }
-        let { Example, Hints, code } = module; 
+        let { Intro, Example, Hints, code } = module; 
         return (
             <main>
+                <link href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.5.0/modern-normalize.min.css" rel="stylesheet" />
                 <link href="https://fonts.googleapis.com/css?family=Karla" rel="stylesheet" />
                 <style global jsx>{`
                     body {
@@ -46,13 +47,20 @@ export default class extends Component {
                     <title>React-dfp documentation: {this.props.title}</title>
                 </Head>
                 <header>
-                    <h1> React DFP Examples: <span> {this.props.title} </span> </h1>
+                    <h1> React DFP documentation: <span> {this.props.title} </span> </h1>
                 </header>
                 <div className="page-body">
                     <SideBar />
                     <div className="page-body__example">
                         { Example ?
                             <Fragment>
+                                {  Intro ?
+                                    <Fragment>
+                                        <h2> Brief Introduction: </h2>
+                                        <Intro />
+                                        <h2> Example: </h2>
+                                    </Fragment>
+                                : null }
                                 <div className="page-body__example__ad">
                                     <span className="page-body__example__ad__content"> ADS GO HERE... </span>
                                     <Example/>

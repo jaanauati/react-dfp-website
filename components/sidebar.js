@@ -6,7 +6,7 @@ function getListItems(listEntries, section) {
     return Object
         .keys(listEntries)
         .map(key => (
-            <li className={`sidebar-item ${key}`}>
+            <li key={`${section}-${key}`} className={`sidebar-item ${key}`}>
                 <Link href={`/${section.toLowerCase()}/${key.toLowerCase()}`}><a>{key}</a></Link>
             </li>
         ));
