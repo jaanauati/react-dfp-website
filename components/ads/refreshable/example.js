@@ -7,7 +7,7 @@ export default class RefreshableAds extends Component {
     componentDidMount() {
         this.interval = window.setInterval(
             () => { DFPManager.refresh(); },
-            15000,
+            30000,
         );
     }
 

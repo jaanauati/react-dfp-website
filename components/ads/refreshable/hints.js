@@ -16,7 +16,10 @@ export default () => (
             the component is only refreshed when this fcn returns true.
         </li>
         <li> Line 32: define a refreshable ad-slot using the &lt;AdSlot&gt; component.</li>
-        <li> Lines 9-11: setup an interval loop that refreshes the ads rendered in this page every 15 seconds.</li>
+        <li>
+            Lines 9-11: setup an interval loop that refreshes the ads rendered in this
+            page every 30 seconds.
+        </li>
         <li> Lines 15: clear internal loop before unmounting this component. </li>
     </ol>
 );

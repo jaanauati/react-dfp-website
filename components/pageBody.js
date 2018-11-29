@@ -16,11 +16,28 @@ export default class extends Component {
         let { Intro, Example, Hints, code } = module; 
         return (
             <main>
-                <link href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.5.0/modern-normalize.min.css" rel="stylesheet" />
-                <link href="https://fonts.googleapis.com/css?family=Karla" rel="stylesheet" />
+                <link
+                    rel="stylesheet"
+                    href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+                    integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+                    crossorigin="anonymous"
+                />
+                <link
+                    href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.5.0/modern-normalize.min.css"
+                    rel="stylesheet"
+                />
+                <link
+                    href="https://fonts.googleapis.com/css?family=Karla"
+                    rel="stylesheet"
+                />
                 <style global jsx>{`
+                    html {
+                        display: flex;
+                        justify-content: center;
+                    }
                     body {
                         background: blank;
+                        width: 1280px;
                         font-family: 'Karla', sans-serif;
                     }
                     .page-body {
@@ -29,7 +46,7 @@ export default class extends Component {
                     }
                         .page-body__example {
                             flex: 2;
-                            margin-top: 2%;
+                            margin-left: 1rem;
                         }
                             .page-body__example__ad {
                                 background: #f7ecf1;
@@ -56,19 +73,20 @@ export default class extends Component {
                             <Fragment>
                                 {  Intro ?
                                     <Fragment>
-                                        <h2> Brief Introduction: </h2>
+                                        <h2> <i class="fas fa-book-open"></i> Brief Introduction: </h2>
                                         <Intro />
-                                        <h2> Example: </h2>
+                                        <h2> <i class="far fa-window-maximize"></i> Example: </h2>
                                     </Fragment>
                                 : null }
                                 <div className="page-body__example__ad">
                                     <span className="page-body__example__ad__content"> ADS GO HERE... </span>
                                     <Example/>
                                 </div>
+                                <h3> <i class="fas fa-file-code"></i> Code: </h3>
                                 <SyntaxHighlighter language='javascript' style={docco} showLineNumbers>
                                     {code}
                                 </SyntaxHighlighter>
-                                <h3> Outstanding points: </h3>
+                                <h3> <i class="far fa-sticky-note"></i> Notes: </h3>
                                 <Hints/>
                             </Fragment>
                             : <Fragment>
