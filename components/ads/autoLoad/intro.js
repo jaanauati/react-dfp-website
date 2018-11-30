@@ -6,27 +6,21 @@ export default function(props) {
     return (
         <Fragment>
             <p>
-                In some scenarios, under certain conditions, your application
-                might need to refresh ads, sometimes reacting to some user actions
-                (for instance when the user browses a photo gallery), or sometimes,
-                we'd like to have our app refreshing the ads at a defined time
-                interval (forinstance, every 5 minutes).
+                The <bold>autoLoad</bold> autoload property is used to have
+                control of the initializations of the ads when using the
+                &lt;DFPSlotsProvider&gt;. When enabled (default), the ads are
+                initialized in the page as soon as the &lt;DFPSlotsProvider&gt;
+                component is mounted.
             </p>
             <p>
-                The following example demonstrates how to accomplish refreshable
-                ads with react dfp. In this case, we make use of the following
-                three pieces:
+                In some cases you'll want to postpone ads renderization until
+                some event ocurrs (reacting to any posible user interaction, or
+                timeout, etc).
             </p>
             <p>
-                <bold>- DFPSlotsProvider</bold>: we use it to configure global
-                settings (dfp id, etc).
-            </p>
-            <p>
-                <bold>- AdSlot</bold>: used to define ad slots in your page.
-            </p>
-            <p>
-                <bold>- DFPManager</bold>: after the ads have been rendered, we
-                use this library to refresh them at a defined time interval.
+                This property is typically used in combination with the method
+                &nbsp;<Link href="/dfpmanager/load"><a>DFPManager.load()</a></Link>,
+                that you can use to manually initialize the ads in your page.
             </p>
         </Fragment>
     );
