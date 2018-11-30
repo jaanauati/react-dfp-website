@@ -28,20 +28,20 @@ export default class extends Component {
                             <Fragment>
                                 {  Intro ?
                                     <Fragment>
-                                        <h2> <i class="fas fa-book-open"></i> Brief Introduction: </h2>
+                                        <h2> <i className="fas fa-book-open"></i> Brief Introduction: </h2>
                                         <Intro />
-                                        <h2> <i class="far fa-window-maximize"></i> Example: </h2>
+                                        <h2> <i className="far fa-window-maximize"></i> Example: </h2>
                                     </Fragment>
                                 : null }
                                 <div className="page-body__example__ad">
                                     <span className="page-body__example__ad__content"> ADS GO HERE... </span>
                                     <Example/>
                                 </div>
-                                <h3> <i class="fas fa-file-code"></i> Code: </h3>
+                                <h3> <i className="fas fa-file-code"></i> Code: </h3>
                                 <SyntaxHighlighter language='javascript' style={docco} showLineNumbers>
                                     {code}
                                 </SyntaxHighlighter>
-                                <h3> <i class="far fa-sticky-note"></i> Notes: </h3>
+                                <h3> <i className="far fa-sticky-note"></i> Notes: </h3>
                                 <Hints/>
                             </Fragment>
                             : <Fragment>
