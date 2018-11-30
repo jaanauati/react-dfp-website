@@ -12,7 +12,7 @@ function parseUrls(CONFIG_ENTRY, section) {
 module.exports = {
   exportPathMap: async function (defaultPathMap) {
     const pages = {
-      '/': { page: '/basic' },
+      '/': { page: '/basic', query: { title: 'Basic Example', example: 'basic' } },
       '/examples/basic': { page: '/basic', query: { title: 'Basic Example', example: 'basic' } },
       '/examples/refreshable': { page: '/basic', query: { title: 'Refreshable ads', example: 'refreshable' } },
       ...parseUrls(ADSLOT_API, 'AdSlot'),

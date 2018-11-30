@@ -14,7 +14,7 @@ function getListItems(listEntries, section) {
 
 export default function sideBar(props) {
     return (
-        <div className="sidebar">
+        <div id="sidebar">
             <h3> Basic Examples </h3>
             <ol>
                 <li> <Link href="/examples/basic"><a>Basic Example</a></Link> </li>

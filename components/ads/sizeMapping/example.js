@@ -7,7 +7,8 @@ export default class Example extends Component {
         return (
             <DFPSlotsProvider
                 dfpNetworkId='9999'
-                adSenseAttributes={{ "foo": "bar", "test": "baz" }}
+                sizeMapping={ [ {viewport: [1024, 768], sizes:[[728, 90], [300, 250]]},
+                                {viewport: [900, 768], sizes:[[300, 250]] }] }
             >
                 <div className="desktop-ads">
                     <AdSlot adUnit='homepage/1' sizes={[ [728,90], [300, 250] ]} />
@@ -15,8 +16,9 @@ export default class Example extends Component {
                 <div className="mobile-ads">
                     <AdSlot
                         adUnit='homepage/2'
-                        sizes={[ [728,90], [300, 250] ]}
-                        adSenseAttributes={{ "site_url": "react-dfp.tk" }}
+                        sizes={[ [728,90], [300, 250], [210, 60] ]}
+                        sizeMapping={ [ {viewport: [1024, 768], sizes:[[728, 90], [300, 250]]},
+                                        {viewport: [900, 768], sizes:[[300, 250], [210,60]] }] }
                     />
                 </div>
             </DFPSlotsProvider>

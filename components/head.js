@@ -31,6 +31,12 @@ export default function(props) {
                     display: flex;
                     flex-direction: row;
                 }
+                    #sidebar h3 {
+                        margin-bottom: 0px
+                    }
+                    #sidebar ol {
+                        margin-top: 0px;
+                    }
                     .page-body__example {
                         flex: 2;
                         margin-left: 1rem;
