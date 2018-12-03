@@ -1,10 +1,11 @@
 const { ADSLOT_API, DFP_SLOTS_PROVIDER } = require('./api.json');
 
+const MAIN_ENDPOINT = '/example';
 function parseUrls(CONFIG_ENTRY, section) {
     return Object.keys(CONFIG_ENTRY)
         .reduce(
             (final, key) => ({
-                ...final, [`/${section.toLowerCase()}/${key.toLowerCase()}`]: { page: '/basic', query: {title: `${section}.${key}`, example: key}}
+                ...final, [`/${section.toLowerCase()}/${key.toLowerCase()}`]: { page: MAIN_ENDPOINT, query: {title: `${section}.${key}`, example: key}}
             }),
             {});
 
@@ -12,9 +13,9 @@ function parseUrls(CONFIG_ENTRY, section) {
 module.exports = {
   exportPathMap: async function (defaultPathMap) {
     const pages = {
-      '/': { page: '/basic', query: { title: 'Basic Example', example: 'basic' } },
-      '/examples/basic': { page: '/basic', query: { title: 'Basic Example', example: 'basic' } },
-      '/examples/refreshable': { page: '/basic', query: { title: 'Refreshable ads', example: 'refreshable' } },
+      '/': { page: '/' },
+      '/examples/basic': { page: MAIN_ENDPOINT, query: { title: 'Basic Example', example: 'basic' } },
+      '/examples/refreshable': { page: MAIN_ENDPOINT, query: { title: 'Refreshable ads', example: 'refreshable' } },
       ...parseUrls(ADSLOT_API, 'AdSlot'),
       ...parseUrls(DFP_SLOTS_PROVIDER, 'DFPSlotsProvider'),
     };
