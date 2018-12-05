@@ -1,5 +1,5 @@
 {
-    "ADSLOT_API": {
+    "AdSlot": {
         "dfpNetworkId": {},
         "adUnit": {},
         "sizes": {},
@@ -11,7 +11,7 @@
         "shouldRefresh": {},
         "slotId": {}
     },
-    "DFP_SLOTS_PROVIDER": {
+    "DFPSlotsProvider": {
         "dfpNetworkId": {},
         "adUnit": {},
         "autoLoad": {},
@@ -20,7 +20,7 @@
         "targetingArguments": {},
         "collapseEmptyDivs": {}
     },
-    "DFP_MANAGER": {
+    "DFPManager": {
         "load": {},
         "refresh": {},
         "setAdSenseAttributes": {},

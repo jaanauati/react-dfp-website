@@ -25,7 +25,7 @@ class ExamplePage extends Component {
         const {
             title,
             example
-        } = props.router.query;
+        } = (props.router.query|| {});
         if (title && example) {
             return {title, example};
         }
@@ -35,7 +35,6 @@ class ExamplePage extends Component {
     render() {
         let module;
         try {
-            console.log(`loading module: ../components/ads/${this.state.example}`);
             module = require(`../components/ads/${this.state.example}`);
         } catch(ex) {
             module = {};

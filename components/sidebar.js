@@ -2,20 +2,21 @@ import Link from 'next/link';
 
 const { ADSLOT_API, DFP_SLOTS_PROVIDER, DFP_MANAGER } = require('../api.json');
 
+const { buildUrls } = require('../utils/routes');
+
 const MAIN_ENDPOINT = '/example';
 
-function getListItems(listEntries, section) {
+function getListItems(section) {
+    const urls = buildUrls(section);
     return Object
-        .keys(listEntries)
+        .keys(urls)
         .map(key => (
             <li key={`${section}-${key}`} className={`sidebar-item ${key}`}>
                 <Link
-                    as={`${section.toLowerCase()}/${key.toLowerCase()}`}
-                    href={`${MAIN_ENDPOINT}?title=${encodeURIComponent(key)}&example=${encodeURIComponent(key)}`}
+                    as={key}
+                    href={`${MAIN_ENDPOINT}?title=${encodeURIComponent(urls[key].title)}&example=${encodeURIComponent(urls[key].example)}`}
                 >
-                    <a 
-                        data-href={`${MAIN_ENDPOINT}?title=${encodeURIComponent(key)}&example=${encodeURIComponent(key)}`}
-                    >{key}</a>
+                    <a>{urls[key].title}</a>
                 </Link>
             </li>
         ));
@@ -28,7 +29,7 @@ export default function sideBar(props) {
             <ol>
                 <li>
                     <Link
-                        as="/examples/basic"
+                        as="/examples/basic/"
                         href={`${MAIN_ENDPOINT}?title=${encodeURIComponent('Basic Example')}&example=basic`}
                     >
                         <a>Basic Example</a>
@@ -36,7 +37,7 @@ export default function sideBar(props) {
                 </li>
                 <li>
                     <Link
-                        as="/examples/refreshable"
+                        as="/examples/refreshable/"
                         href={`${MAIN_ENDPOINT}?title=${encodeURIComponent('Refreshable ads')}&example=refreshable`}
                     >
                         <a>Refreshing Ads</a>
@@ -44,11 +45,11 @@ export default function sideBar(props) {
                 </li>
             </ol>
             <h3> AdSlot </h3>
-            <ol>{ getListItems(ADSLOT_API, 'AdSlot') } </ol>
+            <ol>{ getListItems('AdSlot') } </ol>
             <h3> DFPSlotsProvider </h3>
-            <ol>{ getListItems(DFP_SLOTS_PROVIDER, 'DFPSlotsProvider') } </ol>
+            <ol>{ getListItems('DFPSlotsProvider') } </ol>
             <h3> DFPManager </h3>
-            <ol>{ getListItems(DFP_MANAGER, 'DFPManager') } </ol>
+            <ol>{ getListItems('DFPManager') } </ol>
         </div>
     );
 }
