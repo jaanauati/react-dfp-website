@@ -2,9 +2,7 @@ import Link from 'next/link';
 
 const { ADSLOT_API, DFP_SLOTS_PROVIDER, DFP_MANAGER } = require('../api.json');
 
-const { buildUrls } = require('../utils/routes');
-
-const MAIN_ENDPOINT = '/example';
+const { buildUrls, MAIN_ENDPOINT } = require('../utils/routes');
 
 function getListItems(section) {
     const urls = buildUrls(section);
