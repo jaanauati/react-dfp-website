@@ -4,12 +4,9 @@
   "description": "react-dfp website",
   "main": "index.js",
   "scripts": {
-    "dev": "next",
+    "dev": "node server.js",
     "build": "next build",
-    "export": "next build && next export -o dist",
-    "start": "next start -p $PORT",
-    "serve": "npm run export && serve ./dist",
-    "deploy": "npm run export && npx surge --domain `cat CNAME` dist"
+    "start": "node ./server -p $PORT"
   },
   "author": "Jonatan Anauati (barakawins@gmail.com)",
   "license": "ISC",
