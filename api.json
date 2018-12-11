@@ -2,14 +2,14 @@
     "AdSlot": {
         "dfpNetworkId": {},
         "adUnit": {},
+        "slotId": {},
         "sizes": {},
         "sizeMapping": {},
         "adSenseAttributes": {},
         "targetingArguments": {},
         "onSlotRender": {},
         "onSlotIsViewable": {},
-        "shouldRefresh": {},
-        "slotId": {}
+        "shouldRefresh": {}
     },
     "DFPSlotsProvider": {
         "dfpNetworkId": {},
