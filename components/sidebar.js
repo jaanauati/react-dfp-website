@@ -11,7 +11,7 @@ function getListItems(section) {
         .map(key => (
             <li key={`${section}-${key}`} className={`sidebar-item ${key}`}>
                 <a
-                    href={`/${section.toLowerCase()}/${encodeURIComponent(urls[key].example).toLowerCase()}/`}
+                    href={key}
                 >
                     {urls[key].title}
                 </a>
@@ -22,25 +22,8 @@ function getListItems(section) {
 export default function sideBar(props) {
     return (
         <div id="sidebar">
-            <h3> Basic Examples </h3>
-            <ol>
-                <li>
-                    <Link
-                        as="/examples/basic/"
-                        href={`${MAIN_ENDPOINT}?title=${encodeURIComponent('Basic Example')}&example=basic`}
-                    >
-                        <a>Basic Example</a>
-                    </Link>
-                </li>
-                <li>
-                    <Link
-                        as="/examples/refreshable/"
-                        href={`${MAIN_ENDPOINT}?title=${encodeURIComponent('Refreshable ads')}&example=refreshable`}
-                    >
-                        <a>Refreshing Ads</a>
-                    </Link>
-                </li>
-            </ol>
+            <h3> Examples </h3>
+            <ol>{ getListItems('Examples') } </ol>
             <h3> AdSlot </h3>
             <ol>{ getListItems('AdSlot') } </ol>
             <h3> DFPSlotsProvider </h3>

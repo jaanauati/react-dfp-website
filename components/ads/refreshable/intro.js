@@ -18,15 +18,16 @@ export default function(props) {
                 three pieces:
             </p>
             <p>
-                <bold>- DFPSlotsProvider</bold>: we use it to configure global
+                <strong>- DFPSlotsProvider</strong>: we use it to configure global
                 settings (dfp id, etc).
             </p>
             <p>
-                <bold>- AdSlot</bold>: used to define ad slots in your page.
+                <strong>- AdSlot</strong>: used to define ad slots in your page.
             </p>
             <p>
-                <bold>- DFPManager</bold>: after the ads have been rendered, we
-                use this library to refresh them at a defined time interval.
+                <strong>- DFPManager.refresh()</strong>: after the ads have
+                been rendered, we use this method to refresh them at a defined
+                time interval.
             </p>
         </Fragment>
     );

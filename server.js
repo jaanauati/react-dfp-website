@@ -9,10 +9,12 @@ const app = next({ dev })
 const handle = app.getRequestHandler()
 
 const routes = {
-  '/examples/basic/': { example: 'basic', title: 'Basic Example.' },
-  '/examples/refreshable/': { example: 'refreshable', title: 'Refreshable ads.' },
+  // '/examples/basic/': { example: 'basic', title: 'Basic Example.' },
+  // '/examples/refreshable/': { example: 'refreshable', title: 'Refreshable ads.' },
+  ...buildUrls('Examples'),
   ...buildUrls('AdSlot'),
   ...buildUrls('DFPSlotsProvider'),
+  ...buildUrls('DFPManager'),
 };
 
 app.prepare()

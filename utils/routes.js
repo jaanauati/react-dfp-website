@@ -8,7 +8,10 @@ exports.buildUrls = function(section) {
       (reduced, key) => Object.assign(
         reduced,
         {
-          [`/${section.toLowerCase()}/${key.toLowerCase()}/`]: { example: key, title: key },
+            [
+                listEntries[key].href ||
+                `/${section.toLowerCase()}/${key.toLowerCase()}/`
+            ]: { example: key, title: key, ...listEntries[key] },
         }
       ), {}
     );
