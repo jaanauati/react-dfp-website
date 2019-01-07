@@ -1,4 +1,8 @@
 {
+    "Examples": {
+        "basic": { "title": "Basic Example" },
+        "refreshing": { "title": "Refreshable ads", "example": "refreshable" }
+    },
     "AdSlot": {
         "dfpNetworkId": {},
         "adUnit": {},
@@ -24,7 +28,7 @@
     },
     "DFPManager": {
         "load": {},
-        "refresh": {},
+        "refresh": { "href": "/examples/refreshing/" },
         "setAdSenseAttributes": {},
         "setAdSenseAttribute": {},
         "getAdSenseAttributes": {},
