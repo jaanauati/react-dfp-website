@@ -20,6 +20,7 @@ app.prepare()
     createServer((req, res) => {
       const parsedUrl = parse(req.url, true)
       const { pathname, query } = parsedUrl
+      console.log('****', pathname, query, routes[pathname]);
       app.render(req, res, MAIN_ENDPOINT, routes[pathname]);
     })
       .listen(port, (err) => {

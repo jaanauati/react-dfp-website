@@ -10,12 +10,11 @@ function getListItems(section) {
         .keys(urls)
         .map(key => (
             <li key={`${section}-${key}`} className={`sidebar-item ${key}`}>
-                <Link
-                    as={key}
-                    href={`${MAIN_ENDPOINT}?title=${encodeURIComponent(urls[key].title)}&example=${encodeURIComponent(urls[key].example)}`}
+                <a
+                    href={`/${section.toLowerCase()}/${encodeURIComponent(urls[key].example).toLowerCase()}/`}
                 >
-                    <a>{urls[key].title}</a>
-                </Link>
+                    {urls[key].title}
+                </a>
             </li>
         ));
 }

@@ -13,6 +13,8 @@
     },
     "DFPSlotsProvider": {
         "dfpNetworkId": {},
+        "personalizedAds": {},
+        "singleRequest": {},
         "adUnit": {},
         "autoLoad": {},
         "sizeMapping": {},
