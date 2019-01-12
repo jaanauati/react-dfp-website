@@ -27,14 +27,22 @@
         "collapseEmptyDivs": {}
     },
     "DFPManager": {
-        "load": {},
-        "refresh": { "href": "/examples/refreshing/" },
-        "setAdSenseAttributes": {},
-        "setAdSenseAttribute": {},
-        "getAdSenseAttributes": {},
-        "getAdSenseAttribute": {},
-        "setTargetingArguments": {},
-        "getGoogletag": {},
-        "setCollapseEmptyDivs" : {}
+        "load": { "sidebarTitle": "load([slotId])" },
+        "refresh": {
+            "href": "/examples/refreshing/",
+            "example": "refreshable",
+            "title": "Refreshable ads",
+            "sidebarTitle": "refresh()"
+        },
+        "configureSingleRequest": { "sidebarTitle": "configureSingleRequest(boolean)" },
+        "configurePersonalizedAds": { "sidebarTitle": "configurePersonalizedAds(boolean)" },
+        "singleRequestEnabled": { "sidebarTitle": "singleRequestEnabled()" },
+        "setAdSenseAttributes": { "sidebarTitle": "setAdSenseAttributes()" },
+        "setAdSenseAttribute": { "sidebarTitle": "setAdSenseAttribute()" },
+        "getAdSenseAttributes": { "sidebarTitle": "getAdSenseAttributes()" },
+        "getAdSenseAttribute": { "sidebarTitle": "getAdSenseAttribute()" },
+        "setTargetingArguments": { "sidebarTitle": "setTargetingArguments()" },
+        "getGoogletag": { "sidebarTitle": "getGoogletag()" },
+        "setCollapseEmptyDivs" : { "sidebarTitle": "setCollapseEmptyDivs()" }
     }
 }
