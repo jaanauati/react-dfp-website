@@ -33,6 +33,3 @@ export default class RefreshableAds extends Component {
         );
     }
 }
-if (typeof window !== 'undefined') {
-    DFPManager.load();
-}
