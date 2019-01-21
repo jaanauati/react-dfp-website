@@ -1,8 +1,6 @@
-import Link from 'next/link';
+import React from 'react';
 
-const { ADSLOT_API, DFP_SLOTS_PROVIDER, DFP_MANAGER } = require('../api.json');
-
-const { buildUrls, MAIN_ENDPOINT } = require('../utils/routes');
+const { buildUrls } = require('../utils/routes');
 
 function getListItems(section) {
   const urls = buildUrls(section);

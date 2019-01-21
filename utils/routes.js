@@ -1,6 +1,6 @@
 const apiEntries = require('../api.json');
 
-exports.buildUrls = function (section) {
+exports.buildUrls = (section) => {
   const listEntries = apiEntries[section];
   return Object
     .keys(listEntries)

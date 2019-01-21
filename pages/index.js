@@ -1,10 +1,11 @@
+import React from 'react';
 import PageBody from '../components/pageBody';
 
 
-export default props => (
+export default () => (
   <PageBody title="Home page">
     <p>
-            Welcome to react dfp!.
+      Welcome to react dfp!.
     </p>
   </PageBody>
 );

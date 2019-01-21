@@ -7,7 +7,7 @@
     "dev": "node server.js",
     "build": "next build",
     "start": "node ./server -p $PORT",
-    "eslint": "eslint components pages utils ./package.json 2> /dev/null"
+    "eslint": "eslint components pages utils 2> /dev/null"
   },
   "author": "Jonatan Anauati (barakawins@gmail.com)",
   "license": "ISC",

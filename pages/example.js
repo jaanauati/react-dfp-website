@@ -1,10 +1,24 @@
-import { Component, Fragment } from 'react';
+import React, { Component, Fragment } from 'react';
+import PropTypes from 'prop-types';
 import { withRouter } from 'next/router';
 import SyntaxHighlighter from 'react-syntax-highlighter';
 import { docco } from 'react-syntax-highlighter/styles/hljs';
 import PageBody from '../components/pageBody';
 
 class ExamplePage extends Component {
+  static propTypes = {
+    router: PropTypes.shape({
+      query: PropTypes.shape({
+        example: PropTypes.string,
+        title: PropTypes.string,
+      }),
+    }),
+    query: PropTypes.shape({
+      example: PropTypes.string,
+      title: PropTypes.string,
+    }),
+  }
+
   constructor(props) {
     super(props);
     const { router: { query: routerQuery = {} }, query = {} } = props;
@@ -35,6 +49,8 @@ class ExamplePage extends Component {
   render() {
     let module;
     try {
+      // eslint-disable-next-line max-len
+      // eslint-disable-next-line global-require, import/no-dynamic-require, react/destructuring-assignment,
       module = require(`../components/ads/${this.state.example}`);
     } catch (ex) {
       module = {};

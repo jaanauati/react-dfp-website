@@ -1,4 +1,5 @@
-import react, { Component } from 'react';
+import React from 'react';
+import React, { Component } from 'react';
 import { DFPSlotsProvider, AdSlot } from 'react-dfp';
 
 

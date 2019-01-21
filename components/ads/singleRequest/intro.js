@@ -1,5 +1,4 @@
-import { Fragment } from 'react';
-import Link from 'next/link';
+import React, { Fragment } from 'react';
 
 export default function (props) {
   return (

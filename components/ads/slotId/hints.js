@@ -1,3 +1,5 @@
+import React from 'react';
+
 export default () => (
   <ol>
     <li> Lines 8-15: configure default / global properties using the &lt;DFPSlotProvider&gt;.</li>
