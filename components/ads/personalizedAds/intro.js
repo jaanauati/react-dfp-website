@@ -1,4 +1,4 @@
-import { Fragment } from 'react';
+import React, { Fragment } from 'react';
 import Link from 'next/link';
 
 const EXTERNAL_LINK = 'https://developers.google.com/doubleclick-gpt/reference#googletag.PubAdsService_setRequestNonPersonalizedAds';

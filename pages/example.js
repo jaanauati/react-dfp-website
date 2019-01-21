@@ -35,7 +35,7 @@ class ExamplePage extends Component {
     };
   }
 
-  static getDerivedStateFromProps(props, state) {
+  static getDerivedStateFromProps(props) {
     const {
       title,
       example,

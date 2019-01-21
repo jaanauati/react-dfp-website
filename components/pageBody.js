@@ -1,10 +1,20 @@
-import { Component } from 'react';
+import React, { Component } from 'react';
+import PropTypes from 'prop-types;'
 import GithubCorner from 'react-github-corner';
 import SideBar from './sidebar';
 import Head from './head';
 
 export default class extends Component {
+  static propTypes = {
+    children: PropTypes.oneOfType([
+      PropTypes.arrayOf(PropTypes.node),
+      PropTypes.node,
+    ]).isRequired,
+    title: PropTypes.string.isRequired,
+  }
+
   render() {
+    const { children, title } = this.props;
     return (
       <main>
         <Head {...this.props} />
@@ -12,10 +22,10 @@ export default class extends Component {
         <header>
           <h1>
             {' '}
-React DFP documentation:
+            React DFP documentation:
             <span>
               {' '}
-              {this.props.title}
+              { title }
               {' '}
             </span>
             {' '}
@@ -25,7 +35,7 @@ React DFP documentation:
         <div className="page-body">
           <SideBar />
           <div className="page-body__example">
-            { this.props.children }
+            { children }
           </div>
         </div>
       </main>

@@ -1,7 +1,6 @@
-import { Fragment } from 'react';
-import Link from 'next/link';
+import React, { Fragment } from 'react';
 
-export default function (props) {
+export default function () {
   return (
     <Fragment>
       <p>
@@ -9,25 +8,26 @@ export default function (props) {
         {' '}
         <strong>adSenseAttributes</strong>
         {' '}
-property is meant to
-                configure a set of extra adSense keywords for your ads.
-                This property is accepted by both components:
+        property is meant to
+        configure a set of extra adSense keywords for your ads.
+        This property is accepted by both components:
       </p>
       <ol>
         <li> DFPSlotsProvider </li>
         <li> AdSlot </li>
       </ol>
       <p>
-                You can find more information about this topic in the official
-                gpt documentation:
-                &nbsp;
+        You can find more information about this topic in the official
+        gpt documentation:
+        &nbsp;
         <a
+          rel="noopener noreferrer"
           target="_blank"
           href="https://developers.google.com/doubleclick-gpt/adsense_attributes"
         >
-                    link
+          link
         </a>
-.
+        .
       </p>
     </Fragment>
   );

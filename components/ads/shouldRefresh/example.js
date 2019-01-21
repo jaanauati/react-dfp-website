@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import ReactDom from 'react-dom';
 import { AdSlot, DFPManager, DFPSlotsProvider } from 'react-dfp';
 
 export default class RefreshableAds extends Component {

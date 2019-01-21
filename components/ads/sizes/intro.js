@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react';
 
-export default function (props) {
+export default function () {
   return (
     <Fragment>
       <p>
@@ -12,7 +12,7 @@ export default function (props) {
         sizes that a given adSlot must support. As demostrated in the
         following example, each size is defined with a list following
         this format: [width, height]. This property also supports
-        named sizes (example "fluid").
+        named sizes (example &apos;fluid&apos;).
       </p>
     </Fragment>
   );

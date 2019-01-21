@@ -17,7 +17,7 @@ function getListItems(section) {
     ));
 }
 
-export default function sideBar(props) {
+export default function sideBar() {
   return (
     <div id="sidebar">
       <h3> Examples </h3>

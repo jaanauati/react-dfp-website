@@ -1,6 +1,8 @@
+import React from 'react';
+import PropTypes from 'prop-types';
 import Head from 'next/head';
 
-export default function (props) {
+export default function head({ title }) {
   return (
     <div>
       <Head>
@@ -21,7 +23,7 @@ export default function (props) {
         <title>
           {' '}
 React-dfp documentation:
-          {props.title}
+          {title}
           {' '}
 
         </title>
@@ -66,3 +68,7 @@ React-dfp documentation:
     </div>
   );
 }
+
+head.propTypes = {
+  title: PropTypes.string.isRequired,
+};
