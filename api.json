@@ -1,7 +1,8 @@
 {
     "Examples": {
         "basic": { "title": "Basic Example" },
-        "refreshing": { "title": "Refreshable ads", "example": "refreshable" }
+        "refreshing": { "title": "Refreshable ads 1", "example": "refreshable" },
+        "refreshing-params": { "title": "Refreshable ads 2", "example": "refreshableParams" }
     },
     "AdSlot": {
         "dfpNetworkId": {},
@@ -29,10 +30,8 @@
     "DFPManager": {
         "load": { "sidebarTitle": "load([slotId])" },
         "refresh": {
-            "href": "/examples/refreshing/",
-            "example": "refreshable",
-            "title": "Refreshable ads",
-            "sidebarTitle": "refresh()"
+            "title": "refresh(...slotId)",
+            "sidebarTitle": "refresh(...slotId)"
         },
         "configureSingleRequest": { "sidebarTitle": "configureSingleRequest(boolean)" },
         "configurePersonalizedAds": { "sidebarTitle": "configurePersonalizedAds(boolean)" },

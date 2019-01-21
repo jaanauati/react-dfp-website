@@ -9,7 +9,7 @@ class ExamplePage extends Component {
         super(props);
         const { router: {query: routerQuery = {}}, query = {} } = props;
         this.state = {
-            title: routerQuery.title || query.title || 'Basic Example', 
+            title: routerQuery.title || query.title || 'Basic Example',
             example: routerQuery.example || query.example || 'basic',
         };
     }
@@ -39,7 +39,7 @@ class ExamplePage extends Component {
         } catch(ex) {
             module = {};
         }
-        let { Intro, Example, Hints, code } = module; 
+        let { Intro, Example, Hints, code } = module;
         return (
             <PageBody {...this.props} {...this.state}>
                 { Example ?
