@@ -11,7 +11,7 @@ exports.buildUrls = function(section) {
             [
                 listEntries[key].href ||
                 `/${section.toLowerCase()}/${key.toLowerCase()}/`
-            ]: { example: key, title: key, ...listEntries[key] },
+            ]: { example: key, title: key, sidebarTitle: key, ...listEntries[key] },
         }
       ), {}
     );

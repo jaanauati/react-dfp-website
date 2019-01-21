@@ -1,7 +1,8 @@
 {
     "Examples": {
         "basic": { "title": "Basic Example" },
-        "refreshing": { "title": "Refreshable ads", "example": "refreshable" }
+        "refreshing": { "title": "Refreshable ads 1", "example": "refreshable" },
+        "refreshing-params": { "title": "Refreshable ads 2", "example": "refreshableParams" }
     },
     "AdSlot": {
         "dfpNetworkId": {},
@@ -27,14 +28,20 @@
         "collapseEmptyDivs": {}
     },
     "DFPManager": {
-        "load": {},
-        "refresh": { "href": "/examples/refreshing/" },
-        "setAdSenseAttributes": {},
-        "setAdSenseAttribute": {},
-        "getAdSenseAttributes": {},
-        "getAdSenseAttribute": {},
-        "setTargetingArguments": {},
-        "getGoogletag": {},
-        "setCollapseEmptyDivs" : {}
+        "load": { "sidebarTitle": "load([slotId])" },
+        "refresh": {
+            "title": "refresh(...slotId)",
+            "sidebarTitle": "refresh(...slotId)"
+        },
+        "configureSingleRequest": { "sidebarTitle": "configureSingleRequest(boolean)" },
+        "configurePersonalizedAds": { "sidebarTitle": "configurePersonalizedAds(boolean)" },
+        "singleRequestEnabled": { "sidebarTitle": "singleRequestEnabled()" },
+        "setAdSenseAttributes": { "sidebarTitle": "setAdSenseAttributes()" },
+        "setAdSenseAttribute": { "sidebarTitle": "setAdSenseAttribute()" },
+        "getAdSenseAttributes": { "sidebarTitle": "getAdSenseAttributes()" },
+        "getAdSenseAttribute": { "sidebarTitle": "getAdSenseAttribute()" },
+        "setTargetingArguments": { "sidebarTitle": "setTargetingArguments()" },
+        "getGoogletag": { "sidebarTitle": "getGoogletag()" },
+        "setCollapseEmptyDivs" : { "sidebarTitle": "setCollapseEmptyDivs()" }
     }
 }
