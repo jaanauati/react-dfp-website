@@ -20,7 +20,8 @@ export default function () {
         <a
           rel="noopener noreferrer"
           target="_blank"
-          href="https://support.google.com/admanager/answer/183282?hl=en">
+          href="https://support.google.com/admanager/answer/183282?hl=en"
+        >
             link
         </a>
         .

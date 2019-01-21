@@ -8,7 +8,7 @@ export default function () {
         In some scenarios, under certain conditions, your application
         might need to refresh ads, sometimes reacting to some user actions
         (for instance when the user browses a photo gallery), or sometimes,
-        we'd like to have our app refreshing the ads at a defined time
+        we&apos;d like to have our app refreshing the ads at a defined time
         interval (forinstance, every 5 minutes).
       </p>
       <p>

@@ -10,7 +10,7 @@ export default class Example extends Component {
           <AdSlot
             sizes={[[728, 90], [300, 250]]}
             adUnit="homepage/1"
-            onSlotRender={eventData => console.log('slot 1 rendered!.', eventData)}
+            onSlotRender={eventData => console.log('slot 1 rendered!.', eventData)} // eslint-disable-line no-console
           />
         </div>
         <div className="mobile-ads">

@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react';
 
-export default function (props) {
+export default function () {
   return (
     <Fragment>
       <p>
@@ -31,9 +31,9 @@ export default function (props) {
           target="_blank"
           href="https://developers.google.com/doubleclick-gpt/reference#googletag.PassbackSlot_setTargeting"
         >
-                    link
+          link
         </a>
-.
+        .
       </p>
     </Fragment>
   );

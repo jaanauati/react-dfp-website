@@ -1,7 +1,7 @@
 
 import React, { Fragment } from 'react';
 
-export default function (props) {
+export default function () {
   return (
     <Fragment>
       <p>

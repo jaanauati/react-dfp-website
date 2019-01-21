@@ -7,11 +7,11 @@ const RefreshLink = () => (
   <Link as="/dfpmanager/refresh" href=""><a>DFPManager.refresh()</a></Link>
 );
 
-export default function (props) {
+export default function () {
   return (
     <Fragment>
       <p>
-                Use the property
+        Use the property
         {' '}
         <strong>shouldRefresh</strong>
         {' '}
@@ -30,7 +30,10 @@ export default function (props) {
         refreshed calling it:
       </p>
       <ol>
-        <li> when it returns true: the ad is refreshed (default if you don't pass this prop)</li>
+        <li>
+          when it returns true: the ad is refreshed (default if you don&apos;t
+          pass this prop).
+        </li>
         <li> when false: the ad is not refreshed. </li>
       </ol>
     </Fragment>

@@ -6,10 +6,10 @@ export default () => (
     <li> Line 17: define an ad-slot using the &lt;AdSlot&gt; component.</li>
     <li>
       {' '}
-Line 20: define a second ad-slot using the &lt;AdSlot&gt; component. We use the property
+      Line 20: define a second ad-slot using the &lt;AdSlot&gt; component. We use the property
       <bold>slotId</bold>
       {' '}
-to define a custom id for dom element that contains the ad (a div with id="test-id").
+      to define a custom id for dom element that contains the ad (a div with id=&quot;test-id&quot;).
     </li>
   </ol>
 );

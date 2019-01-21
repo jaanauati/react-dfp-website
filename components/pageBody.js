@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import PropTypes from 'prop-types;'
+import PropTypes from 'prop-types';
 import GithubCorner from 'react-github-corner';
 import SideBar from './sidebar';
 import Head from './head';
