@@ -17,7 +17,7 @@ export default function () {
           ad slots, excepting those that implement the property&nbsp;
           <PropLink name="shouldRefresh" href="/adSlot/shouldRefresh" />
           &nbsp;returning false.
-         </li>
+        </li>
         <li>
           - Pass any arbitrary number of adSlot ids (strings) to refresh
           only that set of ads. In this case the function ignores the

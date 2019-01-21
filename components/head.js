@@ -1,26 +1,33 @@
-import Head from 'next/head'
+import Head from 'next/head';
 
-export default function(props) {
-    return (
-        <div>
-            <Head>
-                <link
-                    href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.5.0/modern-normalize.min.css"
-                    rel="stylesheet"
-                />
-                <link
-                    rel="stylesheet"
-                    href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
-                    integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
-                    crossOrigin="anonymous"
-                />
-                <link
-                    href="https://fonts.googleapis.com/css?family=Karla"
-                    rel="stylesheet"
-                />
-                <title> React-dfp documentation: {props.title} </title>
-            </Head>
-            <style jsx global>{`
+export default function (props) {
+  return (
+    <div>
+      <Head>
+        <link
+          href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.5.0/modern-normalize.min.css"
+          rel="stylesheet"
+        />
+        <link
+          rel="stylesheet"
+          href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+          integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+          crossOrigin="anonymous"
+        />
+        <link
+          href="https://fonts.googleapis.com/css?family=Karla"
+          rel="stylesheet"
+        />
+        <title>
+          {' '}
+React-dfp documentation:
+          {props.title}
+          {' '}
+
+        </title>
+      </Head>
+      <style jsx global>
+        {`
                 html {
                     display: flex;
                     justify-content: center;
@@ -54,7 +61,8 @@ export default function(props) {
                         .page-body__example > ol {
                             list-style-type: square;
                         }
-            `}</style>
-        </div>
-    );
+            `}
+      </style>
+    </div>
+  );
 }

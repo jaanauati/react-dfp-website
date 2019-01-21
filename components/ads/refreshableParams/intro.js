@@ -2,7 +2,7 @@
 import React, { Fragment } from 'react';
 import Link from 'next/link';
 
-export default function(props) {
+export default function (props) {
   return (
     <Fragment>
       <p>

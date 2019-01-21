@@ -1,12 +1,13 @@
 {
-  "name": "reac-dfp-website",
+  "name": "react-dfp-website",
   "version": "1.0.0",
   "description": "react-dfp website",
   "main": "index.js",
   "scripts": {
     "dev": "node server.js",
     "build": "next build",
-    "start": "node ./server -p $PORT"
+    "start": "node ./server -p $PORT",
+    "eslint": "eslint components pages utils ./package.json 2> /dev/null"
   },
   "author": "Jonatan Anauati (barakawins@gmail.com)",
   "license": "ISC",
