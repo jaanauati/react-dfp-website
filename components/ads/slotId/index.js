@@ -1,10 +1,11 @@
 import Example from './example';
-import code from '!raw-loader!./example'
+// eslint-disable-next-line
+import code from '!raw-loader!./example'; // eslint-disable-line
 import Hints from './hints';
 
 
 export {
-    Example,
-    Hints,
-    code,
+  Example,
+  Hints,
+  code,
 };
