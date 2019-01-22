@@ -12,7 +12,10 @@ exports.buildUrls = (section) => {
           listEntries[key].href
                 || `/${section.toLowerCase()}/${key.toLowerCase()}/`
           ]: {
-            example: key, title: key, sidebarTitle: key, ...listEntries[key],
+            page: exports.MAIN_ENDPOINT,
+            query: {
+              example: key, title: key, sidebarTitle: key, ...listEntries[key],
+            },
           },
         },
       ), {},

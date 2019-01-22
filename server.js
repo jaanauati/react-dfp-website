@@ -6,7 +6,7 @@ const { buildUrls, MAIN_ENDPOINT } = require('./utils/routes');
 const port = parseInt(process.env.PORT, 10) || 3000
 const dev = process.env.NODE_ENV !== 'production'
 const app = next({ dev })
-const handle = app.getRequestHandler()
+const handle = app.getRequestHandler();
 
 const routes = {
   // '/examples/basic/': { example: 'basic', title: 'Basic Example.' },
@@ -20,10 +20,14 @@ const routes = {
 app.prepare()
   .then(() => {
     createServer((req, res) => {
-      const parsedUrl = parse(req.url, true)
-      const { pathname, query } = parsedUrl
-      console.log('****', pathname, query, routes[pathname]);
-      app.render(req, res, MAIN_ENDPOINT, routes[pathname]);
+      const parsedUrl = parse(req.url, true);
+      const { pathname, query } = parsedUrl;
+      if (pathname in routes) {
+        console.log('**** Access', pathname, query, routes[pathname].query);
+        app.render(req, res, MAIN_ENDPOINT, routes[pathname].query);
+      } else {
+        handle(req, res);
+      }
     })
       .listen(port, (err) => {
         if (err) throw err
