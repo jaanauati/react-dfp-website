@@ -11,7 +11,7 @@ function getListItems(section) {
         <a
           href={key}
         >
-          {urls[key].sidebarTitle}
+          {urls[key].query.sidebarTitle}
         </a>
       </li>
     ));

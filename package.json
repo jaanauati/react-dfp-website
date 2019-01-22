@@ -1,13 +1,16 @@
 {
-  "name": "react-dfp-website",
+  "name": "react-dfp-surge",
   "version": "1.0.0",
   "description": "react-dfp website",
   "main": "index.js",
   "scripts": {
     "dev": "node server.js",
     "build": "next build",
-    "start": "node ./server -p $PORT",
-    "eslint": "eslint components pages utils 2> /dev/null"
+    "export": "next build && next export -o dist",
+    "serve": "npm run export && serve ./dist",
+    "start": "node ./server -p 8000",
+    "eslint": "eslint components pages utils 2> /dev/null",
+    "deploy:surge": "npm run export && npx surge --domain `cat CNAME` dist"
   },
   "author": "Jonatan Anauati (barakawins@gmail.com)",
   "license": "ISC",
