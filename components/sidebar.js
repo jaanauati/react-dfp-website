@@ -8,11 +8,19 @@ function getListItems(section) {
     .keys(urls)
     .map(key => (
       <li key={`${section}-${key}`} className={`sidebar-item ${key}`}>
-        <a
-          href={key}
-        >
-          {urls[key].query.sidebarTitle}
-        </a>
+        {
+          urls[key].query.disabled ? (
+            <span>
+              {urls[key].query.sidebarTitle}
+            </span>
+          ) : (
+            <a
+              href={key}
+            >
+              {urls[key].query.sidebarTitle}
+            </a>
+          )
+        }
       </li>
     ));
 }
