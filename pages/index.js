@@ -5,7 +5,7 @@ import PageBody from '../components/pageBody';
 
 
 export default () => (
-  <PageBody title="Home page">
+  <PageBody title="">
     <h2>
       Welcome to the react-dfp documentation site!.
     </h2>

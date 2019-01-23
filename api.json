@@ -33,15 +33,15 @@
             "title": "refresh(...slotId)",
             "sidebarTitle": "refresh(...slotId)"
         },
-        "configureSingleRequest": { "sidebarTitle": "configureSingleRequest(boolean)" },
-        "configurePersonalizedAds": { "sidebarTitle": "configurePersonalizedAds(boolean)" },
-        "singleRequestEnabled": { "sidebarTitle": "singleRequestEnabled()" },
-        "setAdSenseAttributes": { "sidebarTitle": "setAdSenseAttributes()" },
-        "setAdSenseAttribute": { "sidebarTitle": "setAdSenseAttribute()" },
-        "getAdSenseAttributes": { "sidebarTitle": "getAdSenseAttributes()" },
-        "getAdSenseAttribute": { "sidebarTitle": "getAdSenseAttribute()" },
-        "setTargetingArguments": { "sidebarTitle": "setTargetingArguments()" },
-        "getGoogletag": { "sidebarTitle": "getGoogletag()" },
-        "setCollapseEmptyDivs" : { "sidebarTitle": "setCollapseEmptyDivs()" }
+        "configureSingleRequest": { "disabled": true, "sidebarTitle": "configureSingleRequest(boolean)" },
+        "configurePersonalizedAds": { "disabled": true, "sidebarTitle": "configurePersonalizedAds(boolean)" },
+        "singleRequestEnabled": { "disabled":true, "sidebarTitle": "singleRequestEnabled()" },
+        "setAdSenseAttributes": { "disabled": true, "sidebarTitle": "setAdSenseAttributes()" },
+        "setAdSenseAttribute": { "disabled": true, "sidebarTitle": "setAdSenseAttribute()" },
+        "getAdSenseAttributes": { "disabled": true, "sidebarTitle": "getAdSenseAttributes()" },
+        "getAdSenseAttribute": { "disabled": true, "sidebarTitle": "getAdSenseAttribute()" },
+        "setTargetingArguments": { "disabled": true, "sidebarTitle": "setTargetingArguments()" },
+        "getGoogletag": { "disabled": true, "sidebarTitle": "getGoogletag()" },
+        "setCollapseEmptyDivs" : { "disabled": true, "sidebarTitle": "setCollapseEmptyDivs()" }
     }
 }
