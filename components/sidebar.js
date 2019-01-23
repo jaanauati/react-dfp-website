@@ -20,6 +20,13 @@ function getListItems(section) {
 export default function sideBar() {
   return (
     <div id="sidebar">
+      <h3> Gneral </h3>
+      <ol>
+        <li><a href="/">Usage</a></li>
+        <li>
+          <a target="_blank" rel="noopener noreferrer" href="https://raw.githubusercontent.com/jaanauati/react-dfp/master/LICENSE">License</a>
+        </li>
+      </ol>
       <h3> Examples </h3>
       <ol>
         { getListItems('Examples') }
