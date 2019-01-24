@@ -33,7 +33,7 @@
             "title": "refresh(...slotId)",
             "sidebarTitle": "refresh(...slotId)"
         },
-        "configureSingleRequest": { "disabled": true, "sidebarTitle": "configureSingleRequest(boolean)" },
+        "configureSingleRequest": { "sidebarTitle": "configureSingleRequest(boolean)" },
         "configurePersonalizedAds": { "disabled": true, "sidebarTitle": "configurePersonalizedAds(boolean)" },
         "singleRequestEnabled": { "disabled":true, "sidebarTitle": "singleRequestEnabled()" },
         "setAdSenseAttributes": { "disabled": true, "sidebarTitle": "setAdSenseAttributes()" },

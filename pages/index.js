@@ -10,7 +10,10 @@ export default () => (
       Welcome to the react-dfp documentation site!.
     </h2>
     <p>
-      React-dfp is a React implementation of the google DFP api. This package is inspired in the awesome library jquery.dfp, and aims to provide its same ease of usage but, of course, taking into consideration the react concepts & lifecycle features.
+      React-dfp is a React implementation of the google DFP api.
+      This package is inspired in the awesome library jquery.dfp,
+      and aims to provide its same ease of usage but, of course,
+      taking into consideration the react concepts & lifecycle features.
     </p>
     <br/>
     <h3>
@@ -20,9 +23,7 @@ export default () => (
     <SyntaxHighlighter language="bash" style={docco}>
       $ npm install --save react-dfp
     </SyntaxHighlighter>
-    <p>
-    </p>
-    <br/>
+    <br />
     <h3>
       <i className="fas fa-book-open" />
       &nbsp;Documentation and Usage:
@@ -38,10 +39,12 @@ export default () => (
       <li> DFPManager api docs.</li>
     </ol>
     <p>
-      We recommend you to start reading the examples so you can have an idea of how the API works.
+      We recommend you to start reading the examples so you can have an
+      idea of how the API works.
     </p>
     <p>
-      Additionally, each section provides their own live examples that you can review and debug.
+      Additionally, each section provides their own live examples that
+      you can review and debug.
     </p>
     <br/>
     <h3>
