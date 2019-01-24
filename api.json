@@ -34,8 +34,8 @@
             "sidebarTitle": "refresh(...slotId)"
         },
         "configureSingleRequest": { "sidebarTitle": "configureSingleRequest(boolean)" },
-        "configurePersonalizedAds": { "disabled": true, "sidebarTitle": "configurePersonalizedAds(boolean)" },
-        "singleRequestEnabled": { "disabled":true, "sidebarTitle": "singleRequestEnabled()" },
+        "configurePersonalizedAds": { "sidebarTitle": "configurePersonalizedAds(boolean)" },
+        "singleRequestIsEnabled": { "sidebarTitle": "singleRequestIsEnabled()" },
         "setAdSenseAttributes": { "disabled": true, "sidebarTitle": "setAdSenseAttributes()" },
         "setAdSenseAttribute": { "disabled": true, "sidebarTitle": "setAdSenseAttribute()" },
         "getAdSenseAttributes": { "disabled": true, "sidebarTitle": "getAdSenseAttributes()" },
