@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { DFPSlotsProvider, AdSlot } from 'react-dfp';
 
-
 export default class Example extends Component {
   render() {
     return (
