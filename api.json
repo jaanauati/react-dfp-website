@@ -38,7 +38,7 @@
         "singleRequestIsEnabled": { "sidebarTitle": "singleRequestIsEnabled()" },
         "setAdSenseAttributes": { "sidebarTitle": "setAdSenseAttributes()" },
         "setAdSenseAttribute": { "disabled": true, "sidebarTitle": "setAdSenseAttribute()" },
-        "getAdSenseAttributes": { "disabled": true, "sidebarTitle": "getAdSenseAttributes()" },
+        "getAdSenseAttributes": { "sidebarTitle": "getAdSenseAttributes()" },
         "getAdSenseAttribute": { "disabled": true, "sidebarTitle": "getAdSenseAttribute()" },
         "setTargetingArguments": { "disabled": true, "sidebarTitle": "setTargetingArguments()" },
         "getGoogletag": { "disabled": true, "sidebarTitle": "getGoogletag()" },
