@@ -7,11 +7,11 @@ export default () => (
       component.
     </li>
     <li>
-      Lines 7-8: we configure the AdSense attribute &apos;site_url&apos;
-      using the method
+      Lines 7-8: we configure the targeting attributes &apos;foo&apos;
+      and &apos;baz&apos; using the method
       <br />
       <strong>
-        {' DFPManager.setAdsenseAttributes() '}
+        {' DFPManager.setTargetingArguments({...args}) '}
       </strong>
       and load the ads in this page using
       <br />

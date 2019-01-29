@@ -8,8 +8,7 @@ export default function () {
         {' '}
         <strong>targetingArguments</strong>
         {' '}
-        property to
-        configure custom targeting paramters in your ad slots.
+        property to configure custom targeting paramters in your ad slots.
         The property is accepted by the following two components.
       </p>
       <ol>

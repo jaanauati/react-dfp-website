@@ -1,8 +1,8 @@
 {
     "Examples": {
-        "basic": { "title": "Basic Example" },
-        "refreshing": { "title": "Refreshable ads 1", "example": "refreshable" },
-        "refreshing-params": { "title": "Refreshable ads 2", "example": "refreshableParams" }
+        "basic": { "sidebarTitle": "Basic Example", "title": "Basic Example" },
+        "refreshing": { "sidebarTitle": "Refreshable ads 1", "title": "Refreshable ads 1", "example": "refreshable" },
+        "refreshing-params": { "sidebarTitle": "Refreshable ads 2", "title": "Refreshable ads 2", "example": "refreshableParams" }
     },
     "AdSlot": {
         "dfpNetworkId": {},
@@ -40,7 +40,7 @@
         "setAdSenseAttribute": { "sidebarTitle": "setAdSenseAttribute(name, val)" },
         "getAdSenseAttributes": { "sidebarTitle": "getAdSenseAttributes()" },
         "getAdSenseAttribute": { "sidebarTitle": "getAdSenseAttribute(name)" },
-        "setTargetingArguments": { "disabled": true, "sidebarTitle": "setTargetingArguments()" },
+        "setTargetingArguments": { "sidebarTitle": "setTargetingArguments({...args})" },
         "getGoogletag": { "disabled": true, "sidebarTitle": "getGoogletag()" },
         "setCollapseEmptyDivs" : { "disabled": true, "sidebarTitle": "setCollapseEmptyDivs()" }
     }
