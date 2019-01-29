@@ -39,7 +39,7 @@
         "setAdSenseAttributes": { "sidebarTitle": "setAdSenseAttributes({...attrs})" },
         "setAdSenseAttribute": { "sidebarTitle": "setAdSenseAttribute(name, val)" },
         "getAdSenseAttributes": { "sidebarTitle": "getAdSenseAttributes()" },
-        "getAdSenseAttribute": { "disabled": true, "sidebarTitle": "getAdSenseAttribute()" },
+        "getAdSenseAttribute": { "sidebarTitle": "getAdSenseAttribute(name)" },
         "setTargetingArguments": { "disabled": true, "sidebarTitle": "setTargetingArguments()" },
         "getGoogletag": { "disabled": true, "sidebarTitle": "getGoogletag()" },
         "setCollapseEmptyDivs" : { "disabled": true, "sidebarTitle": "setCollapseEmptyDivs()" }
