@@ -28,7 +28,7 @@
         "collapseEmptyDivs": {}
     },
     "DFPManager": {
-        "load": { "sidebarTitle": "load([slotId])" },
+        "load": { "sidebarTitle": "load(...slotId)" },
         "refresh": {
             "title": "refresh(...slotId)",
             "sidebarTitle": "refresh(...slotId)"

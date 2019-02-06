@@ -6,7 +6,7 @@ export default function () {
       <p>
         Use the
         {' '}
-        <strong>load([slotId])</strong>
+        <strong>load(...slotId)</strong>
         {' '}
         method to manually
         initialize the ads in your page. The behavior of this method
@@ -22,8 +22,8 @@ export default function () {
           all the ads in the page.
         </li>
         <li>
-          If you pass an adsotId (string), the method will only
-          initialize the pointed ad slot.
+          You can also pass any arbitrary number of slot Ids (strings),
+          in that case this method will only initialize the pointed slots.
         </li>
       </ol>
     </Fragment>

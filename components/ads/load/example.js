@@ -5,8 +5,11 @@ import { AdSlot, DFPManager } from 'react-dfp';
 export default class Example extends Component {
   componentDidMount() {
     setTimeout(() => {
-      DFPManager.load();
+      DFPManager.load('test1', 'test2');
     }, 5000);
+    setTimeout(() => {
+      DFPManager.load();
+    }, 15000);
   }
 
   render() {
@@ -17,6 +20,9 @@ export default class Example extends Component {
         </div>
         <div className="mobile-ads">
           <AdSlot slotId="test2" dfpNetworkId="9999" sizes={[[320, 50], [300, 50]]} adUnit="homepage/mobile" />
+        </div>
+        <div className="mobile-ads">
+          <AdSlot slotId="test3" dfpNetworkId="9999" sizes={[[320, 50], [300, 50]]} adUnit="homepage/mobile/two" />
         </div>
       </div>
     );

@@ -15,7 +15,7 @@ export default class Example extends Component {
           <AdSlot
             sizes={[[320, 50], [300, 50]]}
             adUnit="homepage/mobile"
-            targetingArguments={{ customKw: 'basic example' }}
+            targetingArguments={{ customKw2: 'hello' }}
           />
         </div>
       </DFPSlotsProvider>
