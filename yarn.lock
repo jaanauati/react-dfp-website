@@ -4438,9 +4438,9 @@ rc@^1.0.1, rc@^1.1.6, rc@^1.2.7:
     minimist "^1.2.0"
     strip-json-comments "~2.0.1"
 
-react-dfp@^0.9.1:
-  version "0.9.3"
-  resolved "https://registry.yarnpkg.com/react-dfp/-/react-dfp-0.9.3.tgz#b194db30fce154c36d97a632d25fc959f48bf570"
+react-dfp@^0.10.1:
+  version "0.10.1"
+  resolved "https://registry.yarnpkg.com/react-dfp/-/react-dfp-0.10.1.tgz#eb80f42a75091a44cd1ae8a70fbdb08a1aa5833b"
   dependencies:
     babel-plugin-transform-object-assign "^6.22.0"
     prop-types "^15.6.1"

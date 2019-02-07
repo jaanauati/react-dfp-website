@@ -28,6 +28,7 @@
         "collapseEmptyDivs": {}
     },
     "DFPManager": {
+        "getGoogletag": { "sidebarTitle": "getGoogletag()" },
         "load": { "sidebarTitle": "load(...slotId)" },
         "refresh": {
             "title": "refresh(...slotId)",
@@ -41,7 +42,6 @@
         "getAdSenseAttributes": { "sidebarTitle": "getAdSenseAttributes()" },
         "getAdSenseAttribute": { "sidebarTitle": "getAdSenseAttribute(name)" },
         "setTargetingArguments": { "sidebarTitle": "setTargetingArguments({...args})" },
-        "getGoogletag": { "disabled": true, "sidebarTitle": "getGoogletag()" },
         "setCollapseEmptyDivs" : { "disabled": true, "sidebarTitle": "setCollapseEmptyDivs()" }
     }
 }
