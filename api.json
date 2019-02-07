@@ -35,13 +35,13 @@
             "sidebarTitle": "refresh(...slotId)"
         },
         "configureSingleRequest": { "sidebarTitle": "configureSingleRequest(bool)" },
-        "configurePersonalizedAds": { "sidebarTitle": "configurePersonalizedAds(bool)" },
         "singleRequestIsEnabled": { "sidebarTitle": "singleRequestIsEnabled()" },
+        "configurePersonalizedAds": { "sidebarTitle": "configurePersonalizedAds(bool)" },
         "setAdSenseAttributes": { "sidebarTitle": "setAdSenseAttributes({...attrs})" },
-        "setAdSenseAttribute": { "sidebarTitle": "setAdSenseAttribute(name, val)" },
         "getAdSenseAttributes": { "sidebarTitle": "getAdSenseAttributes()" },
+        "setAdSenseAttribute": { "sidebarTitle": "setAdSenseAttribute(name, val)" },
         "getAdSenseAttribute": { "sidebarTitle": "getAdSenseAttribute(name)" },
         "setTargetingArguments": { "sidebarTitle": "setTargetingArguments({...args})" },
-        "setCollapseEmptyDivs" : { "disabled": true, "sidebarTitle": "setCollapseEmptyDivs()" }
+        "setCollapseEmptyDivs" : { "sidebarTitle": "setCollapseEmptyDivs(arg)" }
     }
 }
