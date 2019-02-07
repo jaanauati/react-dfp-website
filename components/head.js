@@ -25,8 +25,16 @@ export default function head({ title }) {
 React-dfp documentation:
           {title}
           {' '}
-
         </title>
+        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" />
+        <script>
+          {`
+            (adsbygoogle = window.adsbygoogle || []).push({
+              google_ad_client: "ca-pub-5265355416640560",
+              enable_page_level_ads: true
+            });
+          `}
+        </script>
       </Head>
       <style jsx global>
         {`
