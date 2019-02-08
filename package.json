@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "node server.js",
     "build": "next build",
-    "export": "next build && next export -o dist && cp -v dist/404/index.html dist/404.html",
+    "export": "next build && next export -o dist && cp -v dist/404/index.html dist/404.html && cp -rv img dist",
     "serve": "npm run export && serve ./dist",
     "start": "node ./server -p 8000",
     "eslint": "eslint components pages utils 2> /dev/null",

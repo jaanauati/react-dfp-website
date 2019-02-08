@@ -28,7 +28,7 @@ function getListItems(section) {
 export default function sideBar() {
   return (
     <div id="sidebar">
-      <h3> Gneral </h3>
+      <h3> General </h3>
       <ol>
         <li><a href="/">Usage</a></li>
         <li>

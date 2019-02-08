@@ -39,13 +39,13 @@ React-dfp documentation:
       <style jsx global>
         {`
                 html {
-                    display: flex;
-                    justify-content: center;
+                  display: flex;
+                  justify-content: center;
                 }
                 body {
-                    background: blank;
-                    width: 1280px;
-                    font-family: 'Karla', sans-serif;
+                  background: url(/img/white-waves.png);
+                  width: 1280px;
+                  font-family: 'Karla', sans-serif;
                 }
                 .page-body {
                     display: flex;
@@ -54,9 +54,22 @@ React-dfp documentation:
                     #sidebar h3 {
                         margin-bottom: 0px
                     }
+                    #sidebar h3:before {
+                      /* content: '🔶 '; */
+                      content: '# ';
+                    }
                     #sidebar ol {
                         margin-top: 0px;
+                        padding-left: 0.6rem;
                     }
+                      #sidebar ol > li {
+                        margin-top: 0.2rem;
+                        list-style: none;
+                      }
+                      #sidebar ol > li:before {
+                        /* content: '▶️ ' */
+                        content: '> ';
+                      }
                     .page-body__example {
                         flex: 2;
                         margin-left: 1rem;
