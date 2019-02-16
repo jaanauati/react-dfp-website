@@ -6,8 +6,8 @@ import PageBody from '../components/pageBody';
 
 export default () => (
   <PageBody title="">
-    <h2>
-      Welcome to the react-dfp documentation site!.
+    <h2 className="page-body__title">
+      Welcome to the react-dfp documentation site!
     </h2>
     <p>
       React-dfp is a React implementation of the google DFP api.
