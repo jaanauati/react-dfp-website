@@ -3,7 +3,7 @@ import React from 'react';
 export default () => (
   <ol>
     <li>
-            Line 14: Declare a toplevel &lt;DFPSlotProvider&gt; element. We set
+            Line 14: Declare a toplevel <strong>&lt;DFPSlotProvider&gt;</strong> element. We set
             the property autoload to false. This means that the ads will no load
             in the page until we explicitly invoke the method
       <bold>DFPManager.load()</bold>

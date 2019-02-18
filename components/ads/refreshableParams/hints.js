@@ -3,7 +3,7 @@ import React from 'react';
 export default () => (
   <ol>
     <li>
-      Line 22: Declare a toplevel
+      Line 22: Declare a toplevel&nbsp;
       <strong>&lt;DFPSlotProvider&gt;</strong>
       , this instance provides two things: 1) Basic configuration params
       that are shared among all the ads in the page and 2) Takes care of

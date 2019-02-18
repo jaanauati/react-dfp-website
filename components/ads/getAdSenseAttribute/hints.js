@@ -8,7 +8,7 @@ export default () => (
       in the state variable &apos;siteUrl&apos;.
     </li>
     <li>
-      Lines 25,28: we define two ad slots using the &lt;AdSlot&gt;
+      Lines 25,28: we define two ad slots using the <strong>&lt;AdSlot&gt;</strong>
       component.
     </li>
     <li>

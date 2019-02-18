@@ -12,8 +12,8 @@ export default function (props) {
         {' '}
 autoload property is used to have
                 control of the initializations of the ads when using the
-                &lt;DFPSlotsProvider&gt;. When enabled (default), the ads are
-                initialized in the page as soon as the &lt;DFPSlotsProvider&gt;
+                <strong>&lt;DFPSlotsProvider&gt;</strong>. When enabled (default), the ads are
+                initialized in the page as soon as the <strong>&lt;DFPSlotsProvider&gt;</strong>
                 component is mounted.
       </p>
       <p>

@@ -9,7 +9,7 @@ export default function (props) {
         {' '}
         <strong>renderOutOfThePage</strong>
         {' '}
-        to configure whether a given &lt;AdSlot&gt; should be rendered
+        to configure whether a given <strong>&lt;AdSlot&gt;</strong> should be rendered
         out of the page or not.
       </p>
       <p>

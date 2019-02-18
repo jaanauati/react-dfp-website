@@ -10,8 +10,8 @@ export default function (props) {
         ways in which you can configure this prop:
       </p>
       <ol>
-        <li> via the &lt;DFPSlotsProvider /&gt; component </li>
-        <li> or via &lt;AdSlot /&gt; </li>
+        <li> via the <strong>&lt;DFPSlotsProvider /&gt;</strong> component </li>
+        <li> or via <strong>&lt;AdSlot /&gt;</strong> </li>
       </ol>
     </Fragment>
   );

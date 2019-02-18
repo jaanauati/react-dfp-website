@@ -28,7 +28,7 @@ export default function head({ title }) {
         <script dangerouslySetInnerHTML={{
           __html: `
             (adsbygoogle = window.adsbygoogle || []).push({
-              google_ad_client: "ca-pub-4450174680274975",
+              google_ad_client: "ca-pub-1546978910599248",
               enable_page_level_ads: true
             });
           `,
