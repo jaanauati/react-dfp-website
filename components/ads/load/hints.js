@@ -3,7 +3,7 @@ import React from 'react';
 export default () => (
   <ol>
     <li>
-      Lines 19,22, 25: we define three ad slots using the &lt;AdSlot&gt;
+      Lines 19,22, 25: we define three ad slots using the <strong>&lt;AdSlot&gt;</strong>
       component.
     </li>
     <li>

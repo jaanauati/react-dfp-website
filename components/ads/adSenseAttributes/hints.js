@@ -2,9 +2,9 @@ import React from 'react';
 
 export default () => (
   <ol>
-    <li> Lines 8: configure a global dfpNetworkId via &lt;DFPSlotProvider&gt;.</li>
+    <li> Lines 8: configure a global dfpNetworkId via <strong>&lt;DFPSlotProvider&gt;</strong>.</li>
     <li>
-      Line 10: we define an ad-slot using the &lt;AdSlot&gt; component and
+      Line 10: we define an ad-slot using the <strong>&lt;AdSlot&gt;</strong> component and
       configure the AdSense attribute &apos;site_url&apos; using the property
       <strong> adSenseAttributes </strong>.
     </li>

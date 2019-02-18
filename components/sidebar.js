@@ -1,4 +1,5 @@
 import React from 'react';
+import Sidebar from "react-sidebar";
 
 const { buildUrls } = require('../utils/routes');
 
@@ -25,10 +26,10 @@ function getListItems(section) {
     ));
 }
 
-export default function sideBar() {
+function SidebarContent() {
   return (
-    <div id="sidebar">
-      <h3> Gneral </h3>
+    <div className="sidebar">
+      <h3> General </h3>
       <ol>
         <li><a href="/">Usage</a></li>
         <li>
@@ -57,4 +58,40 @@ export default function sideBar() {
       </ol>
     </div>
   );
+}
+
+export default class SiteSidebar extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      sidebarOpen: false,
+    };
+    this.onSetSidebarOpen = this.onSetSidebarOpen.bind(this);
+  }
+
+  onSetSidebarOpen(open) {
+    this.setState({ sidebarOpen: open });
+  }
+
+  render() {
+    return (
+      <React.Fragment>
+        <div id="sidebarMobile">
+          <Sidebar
+            sidebar={<SidebarContent />}
+            open={this.state.sidebarOpen}
+            onSetOpen={this.onSetSidebarOpen}
+            styles={{ sidebar: { background: 'white' } }}
+          >
+            <a role="button" onClick={() => this.onSetSidebarOpen(true)}>
+              <i className="fa fa-bars" />
+            </a>
+          </Sidebar>
+        </div>
+        <div id="sidebar">
+          <SidebarContent />
+        </div>
+      </React.Fragment>
+    );
+  }
 }

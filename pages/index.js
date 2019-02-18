@@ -6,8 +6,8 @@ import PageBody from '../components/pageBody';
 
 export default () => (
   <PageBody title="">
-    <h2>
-      Welcome to the react-dfp documentation site!.
+    <h2 className="page-body__title">
+      Welcome to the react-dfp documentation site!
     </h2>
     <p>
       React-dfp is a React implementation of the google DFP api.
@@ -15,7 +15,7 @@ export default () => (
       and aims to provide its same ease of usage but, of course,
       taking into consideration the react concepts & lifecycle features.
     </p>
-    <br/>
+    <br />
     <h3>
       <i className="fas fa-file-code" />
       &nbsp;Install:
@@ -34,8 +34,8 @@ export default () => (
     </p>
     <ol>
       <li> Examples showing common scenarios. </li>
-      <li> AdSlot documentation </li>
-      <li> DFPSlotsProvider documentation </li>
+      <li> <strong> &lt;AdSlot /&gt;</strong> documentation </li>
+      <li> <strong> &lt;DFPSlotsProvider /&gt;</strong> documentation </li>
       <li> DFPManager api docs.</li>
     </ol>
     <p>

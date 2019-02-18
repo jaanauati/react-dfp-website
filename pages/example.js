@@ -66,18 +66,17 @@ class ExamplePage extends Component {
               { Intro
                 ? (
                   <Fragment>
-                    <h2>
-                      {' '}
-                      <i className="fas fa-book-open" />
-                      {' '}
-Brief Introduction:
+                    <h2 className="page-body__title">
+                      <i className="fas fa-angle-double-right" />
+                      &nbsp;
+                      {this.state.title}
                     </h2>
                     <Intro />
                     <h2>
                       {' '}
                       <i className="far fa-window-maximize" />
                       {' '}
-Example:
+                      Example:
                     </h2>
                   </Fragment>
                 )
@@ -90,11 +89,13 @@ Example:
                 {' '}
                 <i className="fas fa-file-code" />
                 {' '}
-Code:
+                Code:
               </h3>
-              <SyntaxHighlighter language="javascript" style={docco} showLineNumbers>
-                {code}
-              </SyntaxHighlighter>
+              <div className="page-body__example__code">
+                <SyntaxHighlighter language="javascript" style={docco} showLineNumbers>
+                  {code}
+                </SyntaxHighlighter>
+              </div>
               <h3>
                 {' '}
                 <i className="far fa-sticky-note" />
