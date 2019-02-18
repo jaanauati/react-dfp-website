@@ -83,9 +83,9 @@ export default class SiteSidebar extends React.Component {
             onSetOpen={this.onSetSidebarOpen}
             styles={{ sidebar: { background: 'white' } }}
           >
-            <button type="button" onClick={() => this.onSetSidebarOpen(true)}>
+            <a role="button" onClick={() => this.onSetSidebarOpen(true)}>
               <i className="fa fa-bars" />
-            </button>
+            </a>
           </Sidebar>
         </div>
         <div id="sidebar">

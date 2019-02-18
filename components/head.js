@@ -38,6 +38,7 @@ export default function head({ title }) {
       <style jsx global>
         {`
                 .show-mobile { display: none; }
+                .github-corner { z-index: 9; }
                 html {
                   display: flex;
                   justify-content: center;
@@ -60,13 +61,17 @@ export default function head({ title }) {
                     margin-right: 0.45rem;
                 }
                   #sidebarMobile { display: none; }
-                  #sidebarMobile button {
-                    color: #70B6FD;
-                    font-size: 2rem;
-                    margin-left: 0.2rem;
-                    margin-top: 0.2rem;
-                  }
-                    .sidebar { display: block; }
+                    #sidebarMobile > div[role="navigation"] {
+                      width: 75%;
+                    }
+                    #sidebarMobile a[role="button"] {
+                      color: #70B6FD;
+                      font-size: 2.6rem;
+                      margin-left: 0.2rem;
+                      margin-top: 0.2rem;
+                    }
+
+                  .sidebar { display: block; }
                     .sidebar h3 {
                         margin-bottom: 0px
                     }
@@ -125,7 +130,6 @@ export default function head({ title }) {
                     header {
                       text-align: center;
                     }
-                  .hidden-mobile { display: none; }
                   .row-mobile {
                     clear: both;
                     display: block;
@@ -133,6 +137,7 @@ export default function head({ title }) {
                   }
                 }
                 @media screen and (max-width: 768px) {
+                  .hidden-mobile { display: none; }
                   .show-mobile {
                     display: block;
                   }
