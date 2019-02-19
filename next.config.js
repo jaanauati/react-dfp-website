@@ -1,6 +1,8 @@
+/* eslint-disable global-require */
+const withSass = require('@zeit/next-sass')
 const { buildUrls } = require('./utils/routes');
 
-async function exportPathMap(defaultPathMap) {
+async function exportPathMap() {
   const pages = {
     '/': { page: '/index' },
     '/404': { page: '/404' },
@@ -11,4 +13,23 @@ async function exportPathMap(defaultPathMap) {
   };
   return pages;
 }
-exports.exportPathMap = exportPathMap;
+
+module.exports = {
+  exportPathMap,
+  webpack: (config, { defaultLoaders }) => {
+    config.module.rules.push({
+      test: /\.css$/,
+      use: [
+        defaultLoaders.babel,
+        {
+          loader: require('styled-jsx/webpack').loader,
+          options: {
+            type: 'global',
+          },
+        },
+      ],
+    });
+    return config;
+  },
+};
+//module.exports = withSass({ exportPathMap });
