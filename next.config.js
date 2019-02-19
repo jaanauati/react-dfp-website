@@ -1,5 +1,4 @@
 /* eslint-disable global-require */
-const withSass = require('@zeit/next-sass')
 const { buildUrls } = require('./utils/routes');
 
 async function exportPathMap() {
@@ -22,6 +21,7 @@ module.exports = {
       use: [
         defaultLoaders.babel,
         {
+          // eslint-disable-next-line import/no-extraneous-dependencies
           loader: require('styled-jsx/webpack').loader,
           options: {
             type: 'global',
@@ -32,4 +32,3 @@ module.exports = {
     return config;
   },
 };
-//module.exports = withSass({ exportPathMap });
