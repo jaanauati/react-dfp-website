@@ -24,9 +24,9 @@ export default class extends Component {
             React DFP Documentation
           </h1>
           &nbsp;
-          <span className="middot hidden-mobile"> · </span>
+          <span className="middot hidden-tablet"> · </span>
           &nbsp;
-          <span className="row-mobile">
+          <span className="row">
             <a href="https://travis-ci.org/jaanauati/react-dfp" rel="nofollow">
               <img src="https://travis-ci.org/jaanauati/react-dfp.svg?branch=master" alt="Build Status" />
             </a>
@@ -47,7 +47,7 @@ export default class extends Component {
               <img src="https://img.shields.io/npm/dependency-version/react-dfp/peer/react.svg" alt="Dependencies" />
             </a>
           </span>
-          <div className="row-mobile">
+          <div className="row">
             <a className="show-mobile" href="https://github.com/jaanauati/react-dfp" rel="nofollow">
               <img src="https://img.shields.io/bundlephobia/minzip/react-dfp.svg" alt="Minizipped size" />
             </a>
@@ -59,6 +59,12 @@ export default class extends Component {
             { children }
           </div>
         </div>
+        <link
+          rel="stylesheet"
+          href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+          integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+          crossOrigin="anonymous"
+        />
       </main>
     );
   }
