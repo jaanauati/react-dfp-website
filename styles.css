@@ -83,6 +83,7 @@ header > .middot {
             flex-direction: column;
             flex-wrap: nowrap;
             overflow-x: auto;
+            max-height: 400px;
             -webkit-overflow-scrolling: touch;
         }
             .page-body__example__ad__content {

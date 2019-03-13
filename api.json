@@ -21,6 +21,7 @@
         "dfpNetworkId": {},
         "personalizedAds": {},
         "singleRequest": {},
+        "lazyLoad": {},
         "adUnit": {},
         "autoLoad": {},
         "sizeMapping": {},
@@ -36,6 +37,7 @@
             "sidebarTitle": "refresh(...slotId)"
         },
         "configureSingleRequest": { "sidebarTitle": "configureSingleRequest(bool)" },
+        "configureLazyLoad": { "sidebarTitle": "configureLazyLoad(bool, object)" },
         "singleRequestIsEnabled": { "sidebarTitle": "singleRequestIsEnabled()" },
         "configurePersonalizedAds": { "sidebarTitle": "configurePersonalizedAds(bool)" },
         "setAdSenseAttributes": { "sidebarTitle": "setAdSenseAttributes({...attrs})" },
