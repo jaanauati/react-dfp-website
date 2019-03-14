@@ -9,7 +9,9 @@ export default () => (
       configurations to customize the behavior (see documentation above for
       details).
     </li>
-    <li> Line 13: define an ad-slot using the <strong>&lt;AdSlot&gt;</strong> component.</li>
-    <li> Line 16: define another ad-slot using the <strong>&lt;AdSlot&gt;</strong> component.</li>
+    <li>
+      Lines 13,16,19: declare three ad-slots using the <strong>&lt;AdSlot&gt;</strong>
+      &nbsp;component.
+    </li>
   </ol>
 );
