@@ -8,15 +8,16 @@ export default function () {
         {' '}
         <strong>lazyLoad</strong>
         {' '}
-        to render "Lazy loading" ads in your pages. This technique improves both:
+        to lazy load the ads in your pages. This technique improves both:
         page load time and ads viewability. Accepted values for this prop are:
       </p>
       <ol>
         <li> false (default): Lazy load is disabled. </li>
-        <li> true: lazy loading is enabled, this means that ad slots will not render until they approach user's viewport. </li>
+        <li> true: lazy loading is enabled, this means that ad slots will not render until they approach {"user's"} viewport. </li>
         <li>
-          object: additional options to customize lazy the loading behavior. Accepted attributes are:
-          fetchMarginPercent (number), renderMarginPercent (number) and mobileScaling (number).
+          object: additional options to customize lazy the loading behavior.
+          Accepted attributes are: fetchMarginPercent (number), renderMarginPercent (number)
+          and mobileScaling (number).
           Please see the&nbsp;
           <a
             rel="noopener noreferrer"
