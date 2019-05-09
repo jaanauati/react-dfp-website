@@ -43,8 +43,8 @@ export default function () {
         Notes: 
         <ol>
           <li>
-            The described behavior will only work when the property:
-            <a href="/dfpmanager/autoload"> <strong> autoLoad</strong> </a>,
+            The described behavior will only work when the property:&nbsp;
+            <a href="/dfpmanager/autoload"><strong>autoLoad</strong></a>,
             is enabled.
           </li>
           <li>
@@ -74,6 +74,13 @@ export default function () {
                 </a>
               </li>
             </ul>
+          </li>
+          <li>
+            Under the hood the <storng>&lt;DFPSlotsProvided&gt;</storng>&nbsp;
+            calls the method <strong>DFPManager.reload(...)</strong> to reload
+            the ads; if you want to learn more details about the reload
+            function you can check its documentation:&nbsp;
+            <a href="/dfpmanager/reload/">here</a>.
           </li>
         </ol>
       </p>
