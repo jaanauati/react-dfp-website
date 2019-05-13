@@ -9,38 +9,31 @@ export default function () {
         <strong>autoReload</strong>
         {' '}
         when the ad slots need to be reloaded as response of updating
-        props passed to the 
+        props passed to the
         {' '}
         <strong> &lt;DFPManager&gt;</strong>
         {' '}
         component.
       </p>
       <p>
-      This property accepts two different data types: a boolean (<strong>true</strong>/false)
-      or a shape composed of properties that also take boolean values.
+        This property takes a shape, which is composed of a set of
+        keys/props that take boolean values.
+        Ads will be reloaded when any of the props configured with a
+        &nbsp;<strong>true</strong>&nbsp;is updated.
       </p>
-      <p> Values: </p>
       <ol>
-        <li> <strong>false</strong> (default): ads are never reloaded. </li>
-        <li> <strong>true</strong>: Ads are reloaded when any of the props is updated. </li>
-        <li>
-          <strong> shape </strong>: specifies what properties should reload the ads and what
-          properties should not. Default values are:
-          <ol>
-            <li> dfpNetworkId: <strong>true</strong>. </li>
-            <li> personalizedAds: <strong>true</strong>. </li>
-            <li> singleRequest: false. </li>
-            <li> adUnit: false. </li>
-            <li> sizeMapping: false.</li>
-            <li> adSenseAttributes: false. </li>
-            <li> targetingArguments: false. </li>
-            <li> collapseEmptyDivs: false. </li>
-            <li> lazyLoad: false. </li>
-          </ol>
-        </li>
+        <li> dfpNetworkId: false. </li>
+        <li> personalizedAds: false. </li>
+        <li> singleRequest: false. </li>
+        <li> adUnit: false. </li>
+        <li> sizeMapping: false. </li>
+        <li> adSenseAttributes: false. </li>
+        <li> targetingArguments: false. </li>
+        <li> collapseEmptyDivs: false. </li>
+        <li> lazyLoad: false. </li>
       </ol>
       <p>
-        Notes: 
+        Notes:
         <ol>
           <li>
             The described behavior will only work when the property:&nbsp;
