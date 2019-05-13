@@ -25,6 +25,7 @@
         "lazyLoad": {},
         "adUnit": {},
         "autoLoad": {},
+        "autoReload": {},
         "sizeMapping": {},
         "adSenseAttributes": {},
         "targetingArguments": {},
@@ -37,6 +38,7 @@
             "title": "refresh(...slotId)",
             "sidebarTitle": "refresh(...slotId)"
         },
+        "reload": { "sidebarTitle": "reload(...slotId)" },
         "configureSingleRequest": { "sidebarTitle": "configureSingleRequest(bool)" },
         "configureLazyLoad": { "sidebarTitle": "configureLazyLoad(bool, object)" },
         "singleRequestIsEnabled": { "sidebarTitle": "singleRequestIsEnabled()" },
