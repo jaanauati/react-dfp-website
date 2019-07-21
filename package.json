@@ -24,11 +24,10 @@
     "prop-types": "^15.6.2",
     "react": "16.2.0",
     "react-dfp": "0.14.0",
-    "react-dom": "16.2.0",
+    "react-dom": "^16.8.6",
     "react-github-corner": "^2.3.0",
     "react-sidebar": "^3.0.2",
-    "react-syntax-highlighter": "^10.1.1",
-    "serve": "^10.1.1"
+    "react-syntax-highlighter": "^10.1.1"
   },
   "devDependencies": {
     "babel-eslint": "^10.0.1",
@@ -40,6 +39,7 @@
     "eslint-plugin-jsx-a11y": "^6.1.2",
     "eslint-plugin-react": "^7.12.3",
     "raw-loader": "^0.5.1",
+    "serve": "^10.1.2",
     "surge": "^0.21.2"
   }
 }
