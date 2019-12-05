@@ -22,6 +22,7 @@
         "dfpNetworkId": {},
         "personalizedAds": {},
         "singleRequest": {},
+        "disableInitialLoad": {},
         "lazyLoad": {},
         "adUnit": {},
         "autoLoad": {},
