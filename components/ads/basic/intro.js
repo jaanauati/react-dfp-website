@@ -5,7 +5,7 @@ export default function (props) {
   return (
     <Fragment>
       <p>
-                Using react-dfp to serve google dfp ads should should be
+                Using react-dfp to serve google dfp ads should be
                 pretty straightforward in most the cases. The library is
                 composed of two main react components and a javascript library:
       </p>
@@ -46,7 +46,7 @@ export default function (props) {
                 react-dfp/AdSlot/DFPSlotProvider components and also any custom
                 call/invocation that your application may do (for instance,
                 see the
-        <Link href="/examples/refreshable"><a> refreshable ads example </a></Link>
+        <Link href="/examples/refreshing"><a> refreshable ads example </a></Link>
 ).
                 Of course, for most of the cases the two components listed above
                 will suffice and, likely, you will not have to deal with this
