@@ -23,7 +23,7 @@
     "node-sass": "^4.11.0",
     "prop-types": "^15.6.2",
     "react": "^16.8.0",
-    "react-dfp": "0.16.0",
+    "react-dfp": "0.17.1",
     "react-dom": "^16.8.6",
     "react-github-corner": "^2.3.0",
     "react-sidebar": "^3.0.2",
