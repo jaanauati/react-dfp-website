@@ -21,6 +21,7 @@
     "DFPSlotsProvider": {
         "dfpNetworkId": {},
         "personalizedAds": {},
+        "cookieOption": {},
         "singleRequest": {},
         "disableInitialLoad": {},
         "lazyLoad": {},
