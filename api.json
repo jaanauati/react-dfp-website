@@ -54,6 +54,9 @@
       "sidebarTitle": "configureSingleRequest(bool)"
     },
     "configureLazyLoad": { "sidebarTitle": "configureLazyLoad(bool, object)" },
+    "configureLimitedAds": {
+      "sidebarTitle": "configureLimitedAds(bool)"
+    },
     "singleRequestIsEnabled": { "sidebarTitle": "singleRequestIsEnabled()" },
     "configurePersonalizedAds": {
       "sidebarTitle": "configurePersonalizedAds(bool)"
