@@ -1,55 +1,75 @@
 {
-    "Examples": {
-        "basic": { "sidebarTitle": "Basic Example", "title": "Basic Example" },
-        "refreshing": { "sidebarTitle": "Refreshable ads 1", "title": "Refreshable ads 1", "example": "refreshable" },
-        "refreshing-params": { "sidebarTitle": "Refreshable ads 2", "title": "Refreshable ads 2", "example": "refreshableParams" }
+  "Examples": {
+    "basic": { "sidebarTitle": "Basic Example", "title": "Basic Example" },
+    "refreshing": {
+      "sidebarTitle": "Refreshable ads 1",
+      "title": "Refreshable ads 1",
+      "example": "refreshable"
     },
-    "AdSlot": {
-        "dfpNetworkId": {},
-        "adUnit": {},
-        "slotId": {},
-        "sizes": {},
-        "sizeMapping": {},
-        "adSenseAttributes": {},
-        "targetingArguments": {},
-        "onSlotRender": {},
-        "onSlotIsViewable": {},
-        "onSlotVisibilityChanged": {},
-        "renderOutOfThePage": {},
-        "shouldRefresh": {}
-    },
-    "DFPSlotsProvider": {
-        "dfpNetworkId": {},
-        "personalizedAds": {},
-        "cookieOption": {},
-        "singleRequest": {},
-        "disableInitialLoad": {},
-        "lazyLoad": {},
-        "adUnit": {},
-        "autoLoad": {},
-        "autoReload": {},
-        "sizeMapping": {},
-        "adSenseAttributes": {},
-        "targetingArguments": {},
-        "collapseEmptyDivs": {}
-    },
-    "DFPManager": {
-        "getGoogletag": { "sidebarTitle": "getGoogletag()" },
-        "load": { "sidebarTitle": "load(...slotId)" },
-        "refresh": {
-            "title": "refresh(...slotId)",
-            "sidebarTitle": "refresh(...slotId)"
-        },
-        "reload": { "sidebarTitle": "reload(...slotId)" },
-        "configureSingleRequest": { "sidebarTitle": "configureSingleRequest(bool)" },
-        "configureLazyLoad": { "sidebarTitle": "configureLazyLoad(bool, object)" },
-        "singleRequestIsEnabled": { "sidebarTitle": "singleRequestIsEnabled()" },
-        "configurePersonalizedAds": { "sidebarTitle": "configurePersonalizedAds(bool)" },
-        "setAdSenseAttributes": { "sidebarTitle": "setAdSenseAttributes({...attrs})" },
-        "getAdSenseAttributes": { "sidebarTitle": "getAdSenseAttributes()" },
-        "setAdSenseAttribute": { "sidebarTitle": "setAdSenseAttribute(name, val)" },
-        "getAdSenseAttribute": { "sidebarTitle": "getAdSenseAttribute(name)" },
-        "setTargetingArguments": { "sidebarTitle": "setTargetingArguments({...args})" },
-        "setCollapseEmptyDivs" : { "sidebarTitle": "setCollapseEmptyDivs(arg)" }
+    "refreshing-params": {
+      "sidebarTitle": "Refreshable ads 2",
+      "title": "Refreshable ads 2",
+      "example": "refreshableParams"
     }
+  },
+  "AdSlot": {
+    "dfpNetworkId": {},
+    "adUnit": {},
+    "slotId": {},
+    "sizes": {},
+    "sizeMapping": {},
+    "adSenseAttributes": {},
+    "targetingArguments": {},
+    "onSlotRender": {},
+    "onSlotIsViewable": {},
+    "onSlotVisibilityChanged": {},
+    "renderOutOfThePage": {},
+    "shouldRefresh": {}
+  },
+  "DFPSlotsProvider": {
+    "dfpNetworkId": {},
+    "personalizedAds": {},
+    "cookieOption": {},
+    "singleRequest": {},
+    "disableInitialLoad": {},
+    "lazyLoad": {},
+    "limitedAds": {},
+    "adUnit": {},
+    "autoLoad": {},
+    "autoReload": {},
+    "sizeMapping": {},
+    "adSenseAttributes": {},
+    "targetingArguments": {},
+    "collapseEmptyDivs": {}
+  },
+  "DFPManager": {
+    "getGoogletag": { "sidebarTitle": "getGoogletag()" },
+    "load": { "sidebarTitle": "load(...slotId)" },
+    "refresh": {
+      "title": "refresh(...slotId)",
+      "sidebarTitle": "refresh(...slotId)"
+    },
+    "reload": { "sidebarTitle": "reload(...slotId)" },
+    "configureSingleRequest": {
+      "sidebarTitle": "configureSingleRequest(bool)"
+    },
+    "configureLazyLoad": { "sidebarTitle": "configureLazyLoad(bool, object)" },
+    "configureLimitedAds": {
+      "sidebarTitle": "configureLimitedAds(bool)"
+    },
+    "singleRequestIsEnabled": { "sidebarTitle": "singleRequestIsEnabled()" },
+    "configurePersonalizedAds": {
+      "sidebarTitle": "configurePersonalizedAds(bool)"
+    },
+    "setAdSenseAttributes": {
+      "sidebarTitle": "setAdSenseAttributes({...attrs})"
+    },
+    "getAdSenseAttributes": { "sidebarTitle": "getAdSenseAttributes()" },
+    "setAdSenseAttribute": { "sidebarTitle": "setAdSenseAttribute(name, val)" },
+    "getAdSenseAttribute": { "sidebarTitle": "getAdSenseAttribute(name)" },
+    "setTargetingArguments": {
+      "sidebarTitle": "setTargetingArguments({...args})"
+    },
+    "setCollapseEmptyDivs": { "sidebarTitle": "setCollapseEmptyDivs(arg)" }
+  }
 }
