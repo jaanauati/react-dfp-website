@@ -4550,8 +4550,8 @@ path-key@^2.0.0, path-key@^2.0.1:
   resolved "https://registry.yarnpkg.com/path-key/-/path-key-2.0.1.tgz#411cadb574c5a140d3a4b1910d40d80cc9f40b40"
 
 path-parse@^1.0.5, path-parse@^1.0.6:
-  version "1.0.6"
-  resolved "https://registry.yarnpkg.com/path-parse/-/path-parse-1.0.6.tgz#d62dbb5679405d72c4737ec58600e9ddcf06d24c"
+  version "1.0.7"
+  resolved "https://registry.yarnpkg.com/path-parse/-/path-parse-1.0.7.tgz#fbc114b60ca42b30d9daf5858e4bd68bbedb6735"
 
 path-to-regexp@2.1.0:
   version "2.1.0"
@@ -4868,9 +4868,9 @@ rc@^1.0.1, rc@^1.1.6, rc@^1.2.7:
     minimist "^1.2.0"
     strip-json-comments "~2.0.1"
 
-react-dfp@0.20.0:
-  version "0.20.0"
-  resolved "https://registry.yarnpkg.com/react-dfp/-/react-dfp-0.20.0.tgz#de1b55e79a79c36f53a02749598bee33b3d01ded"
+react-dfp@0.20.1:
+  version "0.20.1"
+  resolved "https://registry.yarnpkg.com/react-dfp/-/react-dfp-0.20.1.tgz#5e76cc62e7b072ec828dd49b598a43067d175cb7"
   dependencies:
     babel-plugin-transform-object-assign "^6.22.0"
     prop-types "^15.6.1"
