@@ -20,7 +20,7 @@
     "fstream-ignore": "^1.0.5",
     "modern-normalize": "^0.5.0",
     "next": "^7.0.2",
-    "node-sass": "^4.14.1",
+    "node-sass": "^7.0.0",
     "prop-types": "^15.6.2",
     "react": "^16.8.0",
     "react-dfp": "0.20.1",
