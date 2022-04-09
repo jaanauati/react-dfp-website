@@ -3980,8 +3980,8 @@ modern-normalize@^0.5.0:
   resolved "https://registry.yarnpkg.com/modern-normalize/-/modern-normalize-0.5.0.tgz#7f75bb7319c6ae708d716658dc8d9c9760274887"
 
 moment@^2.22.1:
-  version "2.22.2"
-  resolved "https://registry.yarnpkg.com/moment/-/moment-2.22.2.tgz#3c257f9839fc0e93ff53149632239eb90783ff66"
+  version "2.29.2"
+  resolved "https://registry.yarnpkg.com/moment/-/moment-2.29.2.tgz#00910c60b20843bcba52d37d58c628b47b1f20e4"
 
 moniker@0.1.2:
   version "0.1.2"
@@ -4868,9 +4868,9 @@ rc@^1.0.1, rc@^1.1.6, rc@^1.2.7:
     minimist "^1.2.0"
     strip-json-comments "~2.0.1"
 
-react-dfp@0.20.0:
-  version "0.20.0"
-  resolved "https://registry.yarnpkg.com/react-dfp/-/react-dfp-0.20.0.tgz#de1b55e79a79c36f53a02749598bee33b3d01ded"
+react-dfp@0.20.1:
+  version "0.20.1"
+  resolved "https://registry.yarnpkg.com/react-dfp/-/react-dfp-0.20.1.tgz#5e76cc62e7b072ec828dd49b598a43067d175cb7"
   dependencies:
     babel-plugin-transform-object-assign "^6.22.0"
     prop-types "^15.6.1"
