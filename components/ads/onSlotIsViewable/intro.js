@@ -7,7 +7,7 @@ export default function () {
       <p>
         Use the property
         {' '}
-        <strong>onSlotIsViable</strong>
+        <strong>onSlotIsViewable</strong>
         {' '}
         to define a
         custom callback function that will be fired when the ad
