@@ -2062,8 +2062,8 @@ decamelize@^1.1.2, decamelize@^1.2.0:
   resolved "https://registry.yarnpkg.com/decamelize/-/decamelize-1.2.0.tgz#f6534d15148269b20352e7bee26f501f9a191290"
 
 decode-uri-component@^0.2.0:
-  version "0.2.0"
-  resolved "https://registry.yarnpkg.com/decode-uri-component/-/decode-uri-component-0.2.0.tgz#eb3913333458775cb84cd1a1fae062106bb87545"
+  version "0.2.2"
+  resolved "https://registry.yarnpkg.com/decode-uri-component/-/decode-uri-component-0.2.2.tgz#e69dbe25d37941171dd540e024c444cd5188e1e9"
 
 deep-equal@*:
   version "1.0.1"
@@ -4868,9 +4868,9 @@ rc@^1.0.1, rc@^1.1.6, rc@^1.2.7:
     minimist "^1.2.0"
     strip-json-comments "~2.0.1"
 
-react-dfp@0.20.0:
-  version "0.20.0"
-  resolved "https://registry.yarnpkg.com/react-dfp/-/react-dfp-0.20.0.tgz#de1b55e79a79c36f53a02749598bee33b3d01ded"
+react-dfp@0.20.1:
+  version "0.20.1"
+  resolved "https://registry.yarnpkg.com/react-dfp/-/react-dfp-0.20.1.tgz#5e76cc62e7b072ec828dd49b598a43067d175cb7"
   dependencies:
     babel-plugin-transform-object-assign "^6.22.0"
     prop-types "^15.6.1"
