@@ -4827,8 +4827,8 @@ punycode@^2.1.0:
   resolved "https://registry.yarnpkg.com/punycode/-/punycode-2.1.1.tgz#b58b010ac40c22c5657616c8d2c2c02c7bf479ec"
 
 qs@~6.5.2:
-  version "6.5.2"
-  resolved "https://registry.yarnpkg.com/qs/-/qs-6.5.2.tgz#cb3ae806e8740444584ef154ce8ee98d403f3e36"
+  version "6.5.3"
+  resolved "https://registry.yarnpkg.com/qs/-/qs-6.5.3.tgz#3aeeffc91967ef6e35c0e488ef46fb296ab76aad"
 
 querystring-es3@^0.2.0:
   version "0.2.1"
@@ -4868,9 +4868,9 @@ rc@^1.0.1, rc@^1.1.6, rc@^1.2.7:
     minimist "^1.2.0"
     strip-json-comments "~2.0.1"
 
-react-dfp@0.20.0:
-  version "0.20.0"
-  resolved "https://registry.yarnpkg.com/react-dfp/-/react-dfp-0.20.0.tgz#de1b55e79a79c36f53a02749598bee33b3d01ded"
+react-dfp@0.20.1:
+  version "0.20.1"
+  resolved "https://registry.yarnpkg.com/react-dfp/-/react-dfp-0.20.1.tgz#5e76cc62e7b072ec828dd49b598a43067d175cb7"
   dependencies:
     babel-plugin-transform-object-assign "^6.22.0"
     prop-types "^15.6.1"
